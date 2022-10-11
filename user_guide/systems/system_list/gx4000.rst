@@ -1,0 +1,14 @@
+.. _system_gx4000:
+
+Amstrad GX4000
+==============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``gx4000``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_caprice`

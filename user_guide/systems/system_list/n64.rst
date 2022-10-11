@@ -1,0 +1,15 @@
+.. _system_n64:
+
+Nintendo 64
+===========
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``n64``
+| **Type:** Console
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_mupen64plus`
+- :ref:`emulator_project64`

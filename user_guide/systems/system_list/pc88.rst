@@ -1,0 +1,14 @@
+.. _system_pc88:
+
+NEC PC-8000 / PC-8800 Series
+============================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``pc88``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_xm8`
