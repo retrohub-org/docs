@@ -1,0 +1,29 @@
+..
+	.. image:: /global/assets/systems/pc88-photo.png
+		:width: 25%
+
+.. image:: /global/assets/systems/pc88-logo.png
+	:width: 73%
+
+.. _system_pc88:
+
+NEC PC-8000 / PC-8800 Series
+============================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``pc88``
+- **Type:** Computer
+- **Supported extensions:** 3
+	- .d88
+	- .u88
+	- .m3u
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

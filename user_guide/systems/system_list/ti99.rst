@@ -1,0 +1,25 @@
+.. image:: /global/assets/systems/ti99-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/ti99-logo.png
+	:width: 73%
+
+.. _system_ti99:
+
+Texas Instruments TI-99
+=======================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``ti99``
+- **Type:** Computer
+- **Supported extensions:** 1
+	- .ctg
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~

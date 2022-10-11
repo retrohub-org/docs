@@ -1,0 +1,36 @@
+.. image:: /global/assets/systems/x1-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/x1-logo.png
+	:width: 73%
+
+.. _system_x1:
+
+Sharp X1
+========
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``x1``
+- **Type:** Computer
+- **Supported extensions:** 11
+	- .dx1
+	- .2d
+	- .2hd
+	- .tfd
+	- .d88
+	- .88d
+	- .hdm
+	- .xdf
+	- .dup
+	- .cmd
+	- .zip
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

@@ -1,0 +1,35 @@
+.. image:: /global/assets/systems/gx4000-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/gx4000-logo.png
+	:width: 73%
+
+.. _system_gx4000:
+
+Amstrad GX4000
+==============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``gx4000``
+- **Type:** Computer
+- **Supported extensions:** 10
+	- .cdt
+	- .cpr
+	- .cpc
+	- .dsk
+	- .kcr
+	- .m3u
+	- .sna
+	- .tap
+	- .voc
+	- .zip
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

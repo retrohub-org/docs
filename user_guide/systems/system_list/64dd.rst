@@ -1,0 +1,37 @@
+.. image:: /global/assets/systems/64dd-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/64dd-logo.png
+	:width: 73%
+
+.. _system_64dd:
+
+Nintendo 64 DD
+==============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``64dd``
+- **Type:** Console
+- **Supported extensions:** 7
+	- .n64
+	- .v64
+	- .z64
+	- .bin
+	- .u1
+	- .ndd
+	- .zip
+
+Notes
+~~~~~
+
+BIOS
+----
+
+This system requires BIOS files to work properly.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_mupen64plus`
+- :ref:`emulator_ares`
