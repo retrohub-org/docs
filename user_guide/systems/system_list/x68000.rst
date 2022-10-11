@@ -1,0 +1,37 @@
+.. image:: /global/assets/systems/x68000-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/x68000-logo.png
+	:width: 73%
+
+.. _system_x68000:
+
+Sharp X68000
+============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``x68000``
+- **Type:** Computer
+- **Supported extensions:** 12
+	- .dim
+	- .img
+	- .d88
+	- .88d
+	- .hdm
+	- .dup
+	- .2hd
+	- .xdf
+	- .hdf
+	- .cmd
+	- .m3u
+	- .zip
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

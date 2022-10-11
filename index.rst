@@ -1,10 +1,14 @@
 RetroHub Documentation
 ======================
 
-Work in progress.
+Welcome to RetroHub's documentation. This website contains plenty of information to help you get started with RetroHub, whether you're a regular user or a theme developer.
 
-This documentation will have:
+You can navigate the whole documentation through the side bar on the left, as well as searching for any page you want.
 
-- Guides for users on how to use RetroHub
-- Guides on theme developers on how to develop themes for RetroHub
-- Guides for RetroHub developers with public API documentation
+
+.. toctree::
+	:maxdepth: 1
+
+	user_guide/index
+	theme_development/index
+	class_api/index

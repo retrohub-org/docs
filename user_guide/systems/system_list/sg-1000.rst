@@ -1,0 +1,38 @@
+.. image:: /global/assets/systems/sg-1000-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/sg-1000-logo.png
+	:width: 73%
+
+.. _system_sg-1000:
+
+Sega SG-1000
+============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``sg-1000``
+- **Type:** Console
+- **Supported extensions:** 12
+	- .rom
+	- .ri
+	- .mx1
+	- .mx2
+	- .col
+	- .dsk
+	- .cas
+	- .sg
+	- .sc
+	- .m3u
+	- .bin
+	- .zip
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_ares`

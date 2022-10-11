@@ -1,0 +1,34 @@
+.. image:: /global/assets/systems/n64-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/n64-logo.png
+	:width: 73%
+
+.. _system_n64:
+
+Nintendo 64
+===========
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``n64``
+- **Type:** Console
+- **Supported extensions:** 7
+	- .n64
+	- .v64
+	- .z64
+	- .bin
+	- .u1
+	- .ndd
+	- .zip
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_mupen64plus`
+- :ref:`emulator_ares`

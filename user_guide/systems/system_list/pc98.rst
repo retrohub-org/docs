@@ -1,0 +1,43 @@
+.. image:: /global/assets/systems/pc98-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/pc98-logo.png
+	:width: 73%
+
+.. _system_pc98:
+
+NEC PC-9800 Series
+==================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``pc98``
+- **Type:** Computer
+- **Supported extensions:** 18
+	- .d98
+	- .zip
+	- .98d
+	- .fdi
+	- .fdd
+	- .2hd
+	- .tfd
+	- .d88
+	- .88d
+	- .hdm
+	- .xdf
+	- .dup
+	- .cmd
+	- .hdi
+	- .thd
+	- .nhd
+	- .hdd
+	- .hdn
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

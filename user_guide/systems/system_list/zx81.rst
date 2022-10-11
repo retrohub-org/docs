@@ -1,0 +1,28 @@
+.. image:: /global/assets/systems/zx81-photo.png
+	:width: 25%
+
+.. image:: /global/assets/systems/zx81-logo.png
+	:width: 73%
+
+.. _system_zx81:
+
+Sinclair ZX81
+=============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+- **Short name:** ``zx81``
+- **Type:** Computer
+- **Supported extensions:** 3
+	- .p
+	- .tzx
+	- .t81
+
+Notes
+~~~~~
+
+There are no special notes for this system. Games should work out of the box.
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

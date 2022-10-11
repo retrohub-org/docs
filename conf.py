@@ -3,8 +3,8 @@
 # -- Project information
 
 project = 'RetroHub'
-copyright = '2022, RetroHub-Org'
-author = 'Ev1lbl0w'
+copyright = '2023, RetroHub-Org'
+author = 'rsubtil'
 
 release = '0.0'
 version = '0.0.1'
