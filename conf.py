@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'RetroHub'
+copyright = '2022, RetroHub-Org'
+author = 'Ev1lbl0w'
 
-release = '0.1'
-version = '0.1.0'
+release = '0.0'
+version = '0.0.1'
 
 # -- General configuration
 
