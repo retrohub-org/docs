@@ -1,0 +1,13 @@
+.. _system_x68000:
+
+Sharp X68000
+============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``x68000``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

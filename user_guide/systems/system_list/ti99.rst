@@ -1,0 +1,13 @@
+.. _system_ti99:
+
+Texas Instruments TI-99
+=======================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``ti99``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_ti99sim`

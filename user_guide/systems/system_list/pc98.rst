@@ -1,0 +1,13 @@
+.. _system_pc98:
+
+NEC PC-9800 Series
+==================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``pc98``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`

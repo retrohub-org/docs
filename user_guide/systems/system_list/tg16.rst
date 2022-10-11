@@ -1,0 +1,14 @@
+.. _system_tg16:
+
+NEC TurboGrafx-16
+=================
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``tg16``
+| **Type:** Console
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_mednafen`

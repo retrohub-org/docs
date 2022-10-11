@@ -1,0 +1,14 @@
+.. _system_zx81:
+
+Sinclair ZX81
+=============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``zx81``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_zesaurux`
