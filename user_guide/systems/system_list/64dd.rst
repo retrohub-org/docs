@@ -1,0 +1,15 @@
+.. _system_64dd:
+
+Nintendo 64 DD
+==============
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``64dd``
+| **Type:** Console
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
+- :ref:`emulator_mupen64plus`
+- :ref:`emulator_project64`

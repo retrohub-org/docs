@@ -1,0 +1,13 @@
+.. _system_x1:
+
+Sharp X1
+========
+
+Basic Information
+~~~~~~~~~~~~~~~~~
+| **Short name:** ``x1``
+| **Type:** Computer
+
+Emulators
+~~~~~~~~~
+- :ref:`emulator_retroarch`
