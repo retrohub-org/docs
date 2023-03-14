@@ -107,9 +107,6 @@ Supported systems
 - :ref:`system_wonderswancolor`
 - :ref:`system_arcade`
 - :ref:`system_atomiswave`
-- :ref:`system_fba`
-- :ref:`system_fbneo`
-- :ref:`system_mame`
 - :ref:`system_naomi`
 - :ref:`system_naomigd`
 - :ref:`system_neogeo`

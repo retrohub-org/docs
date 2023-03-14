@@ -39,6 +39,8 @@ Constants
 	  - :ref:`KEY_DATE_FORMAT <api_ConfigData_KEY_DATE_FORMAT>`
 	* - |godot_string|
 	  - :ref:`KEY_SYSTEM_NAMES <api_ConfigData_KEY_SYSTEM_NAMES>`
+	* - |godot_int|
+	  - :ref:`KEY_SCRAPER_HASH_FILE_SIZE <api_ConfigData_KEY_SCRAPER_HASH_FILE_SIZE>`
 	* - |godot_string|
 	  - :ref:`KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT <api_ConfigData_KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT>`
 	* - |godot_string|
@@ -152,6 +154,14 @@ Key for the :ref:`date_format <api_ConfigData_date_format>` property.
 	|godot_string| **KEY_SYSTEM_NAMES** = ``"system_names"``
 
 Key for the :ref:`system_names <api_ConfigData_system_names>` property.
+
+----
+
+.. _api_ConfigData_KEY_SCRAPER_HASH_FILE_SIZE:
+
+	|godot_string| **KEY_SCRAPER_HASH_FILE_SIZE** = ``"scraper_hash_file_size"``
+
+Key for the :ref:`scraper_hash_file_size <api_ConfigData_scraper_hash_file_size>` property.
 
 ----
 
@@ -303,6 +313,9 @@ Properties
 	* - |godot_dictionary|
 	  - :ref:`system_names <api_ConfigData_system_names>`
 	  - |godot_dictionary|
+	* - |godot_int|
+	  - :ref:`scraper_hash_file_size <api_ConfigData_scraper_hash_file_size>`
+	  - ``64``
 	* - |godot_bool|
 	  - :ref:`scraper_ss_use_custom_account <api_ConfigData_scraper_ss_use_custom_account>`
 	  - ``false``
@@ -445,6 +458,14 @@ Valid values:
 	|godot_dictionary| **system_names** = |godot_dictionary|
 
 Chosen system remaps per region. Each key determines the displayed name for the system.
+
+----
+
+.. _api_ConfigData_scraper_hash_file_size:
+
+	|godot_int| **scraper_hash_file_size** = ``64``
+
+Maximum allowed size, in MB, of game files to be hashed for scraping. This is used to avoid scraping large files. Set to ``0`` to disable this limit.
 
 ----
 

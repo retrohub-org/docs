@@ -6,8 +6,8 @@ project = 'RetroHub'
 copyright = '2023, RetroHub-Org'
 author = 'rsubtil'
 
-release = '0.0'
-version = '0.0.1'
+release = '0.1'
+version = '0.1.1'
 
 # -- General configuration
 
@@ -28,7 +28,6 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-
 html_theme = 'sphinx_rtd_theme'
 
 # -- Options for EPUB output

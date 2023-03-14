@@ -10,7 +10,7 @@ Application
 
 Open the Configuration UI (|action: rh_menu|), and navigate to the **Systems** section.
 
-.. image:: assets/system_section.png
+.. image:: ../adding_system/assets/system_section.png
 
 Then modify these fields to your liking. Remember to save changes when you're done.
 

@@ -23,7 +23,15 @@ You can scrape one, multiple, or even your entire library of games. Open the **S
 
 .. image:: assets/scraper_settings.png
 
-Select the desired scraping service. Check `Metadata Support`_ and `Media Support`_ for a list of supported metadata and media for each scraper. Currently, ScreenScraper is the most complete scraper, and is thus recommended.
+Select the desired scraping service. Check `Search Support`_, `Metadata Support`_ and `Media Support`_ for a list of supported search modes, metadata and media for each scraper. We recommend using ScreenScraper as it's the most complete scraper.
+
+.. image:: assets/scraper_settings_search.png
+
+Check how to search for your games:
+
+- **By file hash**: Computes the MD5 hash of your game files and uses it to uniquely identify it on the scraper's database. This is the most reliable way to detect your games. If this doesn't work (either because the file is too big, or the scraper doesn't know that hash), it will fallback to search by name if enabled.
+- **By file name**: Searches for your game using the game's file name, minus the extension. RetroHub will ask you to choose between multiple results if available, and also allow you to refine the search term.
+- **File hash size limit**: When searching by hash is enabled, this option allows you to set the maximum file size (in MB/GB) allowed. Files bigger than this will not be hashed, and will fallback to search by name if enabled.
 
 .. image:: assets/scraper_settings_media.png
 
@@ -48,11 +56,6 @@ Depending on the amount of games, types of media, and your internet connection, 
 ScreenScraper
 -------------
 
-Game file hash
-^^^^^^^^^^^^^^
-
-Most scrapers will look at the game's file name to determine what game it is. ScreenScraper will first try to match results by the file's hash, which should result in less false positives and faster scrapes. If no results are found, it will try to match by the file name instead.
-
 Region
 ^^^^^^
 ScreenScraper will return results according to your currently set region, and not the game's region.
@@ -66,6 +69,17 @@ To circumvent this, you should make a free account on theit website at `https://
 .. image:: assets/scraper_ss_account.png
 
 This will scrape with your personal quota instead. If that runs out as well, you'll have to wait until the next day/hour to scrape again.
+
+Search Support
+--------------
+
++-------------------+---------------+
+| Search            | ScreenScraper |
++===================+===============+
+| File hash         | yes           |
++-------------------+---------------+
+| File name         | yes           |
++-------------------+---------------+
 
 Metadata Support
 ----------------

@@ -1,7 +1,7 @@
 Download
 ========
 
-RetroHub can be downloaded from `GitHub releases <https://github.com/retrohub-org/retrohub/releases>`_. The current latest release is `v0.0.8-alpha <https://github.com/retrohub-org/retrohub/releases/tag/v0.0.8-alpha>`_.
+RetroHub can be downloaded from `GitHub releases <https://github.com/retrohub-org/retrohub/releases>`_. The current latest release is `v0.1.1-beta <https://github.com/retrohub-org/retrohub/releases/tag/v0.1.1-beta>`_.
 
 RetroHub is available for **Windows**, **macOS** and **Linux**.
 
