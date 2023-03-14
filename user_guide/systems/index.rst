@@ -128,9 +128,6 @@ System list
 	system_list/arcade
 	system_list/atomiswave
 	system_list/daphne
-	system_list/fba
-	system_list/fbneo
-	system_list/mame
 	system_list/naomi
 	system_list/naomigd
 	system_list/neogeo

@@ -17,6 +17,8 @@ Constants
 	* - Type
 	  - Name
 	* - |godot_color|
+	  - :ref:`color_theme_accent <api_RetroHubUI_color_theme_accent>`
+	* - |godot_color|
 	  - :ref:`color_success <api_RetroHubUI_color_success>`
 	* - |godot_color|
 	  - :ref:`color_warning <api_RetroHubUI_color_warning>`
@@ -26,6 +28,16 @@ Constants
 	  - :ref:`color_pending <api_RetroHubUI_color_pending>`
 	* - |godot_color|
 	  - :ref:`color_unavailable <api_RetroHubUI_color_unavailable>`
+	* - |godot_int|
+	  - :ref:`max_popupmenu_height <api_RetroHubUI_max_popupmenu_height>`
+
+----
+
+.. _api_RetroHubUI_color_theme_accent:
+
+	|godot_color| **color_theme_accent**
+
+Color used for "accent" elements on RetroHub's interface.
 
 ----
 
@@ -67,6 +79,14 @@ Color used for pending operations.
 
 Color used for unavailable objects.
 
+----
+
+.. _api_RetroHubUI_max_popupmenu_height:
+
+	|godot_int| **max_popupmenu_height**
+
+Maximum size, in pixels, for |godot_popupmenu| elements. Use this value in your themes to have consistent sizes with RetroHub's defaults.
+
 Enumerations
 ------------
 
@@ -85,6 +105,22 @@ enum **Icons**:
 - **VISIBILITY_VISIBLE** - Visible visibility icon.
 - **WARNING** - Warning icon.
 
+----
+
+.. _api_RetroHubUI_ConfigTabs:
+
+enum **ConfigTabs**:
+
+- **QUIT** - Quit tab.
+- **GAME** - Game metadata editor tab.
+- **SCRAPER** - Scraper tab.
+- **THEME** - Theme settings tab.
+- **SETTINGS_GENERAL** - General settings tab.
+- **SETTINGS_INPUT** - Input settings tab.
+- **SETTINGS_REGION** - Region settings tab.
+- **SETTINGS_SYSTEMS** - Systems settings tab.
+- **SETTINGS_EMULATORS** - Emulators settings tab.
+- **SETTINGS_ABOUT** - About tab.
 
 Signals
 -------
@@ -120,6 +156,10 @@ Methods
 	  - :ref:`is_event_from_virtual_keyboard <api_RetroHubUI_is_event_from_virtual_keyboard>`
 	* - void
 	  - :ref:`hide_virtual_keyboard <api_RetroHubUI_hide_virtual_keyboard>`
+	* - void
+	  - :ref:`open_app_config <api_RetroHubUI_open_app_config>`
+	* - void
+	  - :ref:`show_warning <api_RetroHubUI_show_warning>`
 
 ----
 
@@ -227,3 +267,22 @@ Returns ``true`` if the current input event is coming from the virtual keyboard.
 	void **hide_virtual_keyboard** ()
 
 Hides the virtual keyboard.
+
+----
+
+.. _api_RetroHubUI_open_app_config:
+
+	void **open_app_config** (tab : :ref:`ConfigTabs <api_RetroHubUI_ConfigTabs>` = ``-1``)
+
+Opens RetroHub's app configuration UI. If ``-1`` is specified, the app will stay on the currently selected tab.
+
+.. warning::
+	Opening the app configuration UI will steal focus from the theme until the user closes it.
+
+----
+
+.. _api_RetroHubUI_show_warning:
+
+	void **show_warning** (text: |godot_string|)
+
+Shows a warning to the user. Use this for warnings that are at the application level, and not specific to your theme.

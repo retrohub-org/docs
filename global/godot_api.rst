@@ -16,3 +16,4 @@
 .. |godot_lineedit| replace:: `LineEdit <https://docs.godotengine.org/en/3.5/classes/class_lineedit.html#class-lineedit>`__
 .. |godot_textedit| replace:: `TextEdit <https://docs.godotengine.org/en/3.5/classes/class_textedit.html#class-textedit>`__
 .. |godot_flowcontainer| replace:: `FlowContainer <https://docs.godotengine.org/en/3.5/classes/class_flowcontainer.html#class-flowcontainer>`__
+.. |godot_popupmenu| replace:: `PopupMenu <https://docs.godotengine.org/en/3.5/classes/class_popupmenu.html#class-popupmenu>`__

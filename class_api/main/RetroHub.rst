@@ -179,6 +179,8 @@ Methods
 	  - :ref:`launch_game <api_RetroHub_launch_game>`
 	* - void
 	  - :ref:`request_theme_reload <api_RetroHub_request_theme_reload>`
+	* - void
+	  - :ref:`kill_game_process <api_RetroHub_kill_game_process>`
 
 ----
 
@@ -243,3 +245,11 @@ Launches the currently selected game. Must be set prior with :ref:`set_curr_game
 	void **request_theme_reload** ()
 
 Request RetroHub to fully reload your theme. This is useful if some major configuration was changed from the app, and it's easier to reload the theme than to try to update it in place.
+
+----
+
+.. _api_RetroHub_kill_game_process:
+
+	void **kill_game_process** ()
+
+Kills the current launched game process. Used internally.

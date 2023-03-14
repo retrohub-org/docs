@@ -10,7 +10,7 @@ Application
 
 Open the Configuration UI (|action: rh_menu|), and navigate to the **Emulators** section.
 
-.. image:: assets/emulator_section.png
+.. image:: ../adding_emulator/assets/emulator_section.png
 
 Then modify these fields to your liking. Remember to save changes when you're done.
 
