@@ -70,6 +70,13 @@ To circumvent this, you should make a free account on theit website at `https://
 
 This will scrape with your personal quota instead. If that runs out as well, you'll have to wait until the next day/hour to scrape again.
 
+Thread usage
+^^^^^^^^^^^^
+
+By default, RetroHub will scrape with 2 threads. If your custom account has access to more threads, RetroHub will use all of them. To limit how many threads are used, you can set it in the **Scraper** settings:
+
+.. image:: assets/scraper_ss_threads.png
+
 Search Support
 --------------
 

@@ -46,6 +46,8 @@ Methods
 	  - :ref:`get_os_id <api_FileUtils_get_os_id>`
 	* - |godot_string|
 	  - :ref:`get_os_string <api_FileUtils_get_os_string>`
+	* - |godot_bool|
+	  - :ref:`is_steam_deck <api_FileUtils_is_steam_deck>`
 
 ----
 
@@ -132,3 +134,11 @@ Returns the current operating system as an :ref:`OS_ID <api_FileUtils_OS_ID>`.
 	|godot_string| **get_os_string** ()
 
 Returns the current operating system as a string. Possible values are ``"windows"``, ``"macos"``, ``"linux"``, and ``"null"``.
+
+----
+
+.. _api_FileUtils_is_steam_deck:
+
+	|godot_bool| **is_steam_deck** ()
+
+Returns ``true`` if the current system is a Steam Deck.

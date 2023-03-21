@@ -43,6 +43,8 @@ Constants
 	  - :ref:`KEY_SCRAPER_HASH_FILE_SIZE <api_ConfigData_KEY_SCRAPER_HASH_FILE_SIZE>`
 	* - |godot_string|
 	  - :ref:`KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT <api_ConfigData_KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT>`
+	* - |godot_int|
+	  - :ref:`KEY_SCRAPER_SS_MAX_THREADS <api_ConfigData_KEY_SCRAPER_SS_MAX_THREADS>`
 	* - |godot_string|
 	  - :ref:`KEY_CUSTOM_INPUT_REMAP <api_ConfigData_KEY_CUSTOM_INPUT_REMAP>`
 	* - |godot_string|
@@ -62,9 +64,13 @@ Constants
 	* - |godot_string|
 	  - :ref:`KEY_VIRTUAL_KEYBOARD_LAYOUT <api_ConfigData_KEY_VIRTUAL_KEYBOARD_LAYOUT>`
 	* - |godot_string|
+	  - :ref:`KEY_VIRTUAL_KEYBOARD_TYPE <api_ConfigData_KEY_VIRTUAL_KEYBOARD_TYPE>`
+	* - |godot_string|
 	  - :ref:`KEY_VIRTUAL_KEYBOARD_SHOW_ON_CONTROLLER <api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_CONTROLLER>`
 	* - |godot_string|
 	  - :ref:`KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE <api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE>`
+	* - |godot_bool|
+	  - :ref:`KEY_ACCESSIBILITY_SCREEN_READER_ENABLED <api_ConfigData_KEY_ACCESSIBILITY_SCREEN_READER_ENABLED>`
 
 ----
 
@@ -115,7 +121,6 @@ Key for the :ref:`fullscreen <api_ConfigData_fullscreen>` property.
 Key for the :ref:`vsync <api_ConfigData_vsync>` property.
 
 ----
-
 
 .. _api_ConfigData_KEY_RENDER_RESOLUTION:
 
@@ -173,6 +178,13 @@ Key for the :ref:`scraper_ss_use_custom_account <api_ConfigData_scraper_ss_use_c
 
 ----
 
+.. _api_ConfigData_KEY_SCRAPER_SS_MAX_THREADS:
+
+	|godot_string| **KEY_SCRAPER_SS_MAX_THREADS** = ``"scraper_ss_max_threads"``
+
+Key for the :ref:`scraper_ss_max_threads <api_ConfigData_scraper_ss_max_threads>` property.
+
+----
 
 .. _api_ConfigData_KEY_CUSTOM_INPUT_REMAP:
 
@@ -190,7 +202,6 @@ Key for the :ref:`input_key_map <api_ConfigData_input_key_map>` property.
 
 ----
 
-
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_MAP:
 
 	|godot_string| **KEY_INPUT_CONTROLLER_MAP** = ``"input_controller_map"``
@@ -198,7 +209,6 @@ Key for the :ref:`input_key_map <api_ConfigData_input_key_map>` property.
 Key for the :ref:`input_controller_map <api_ConfigData_input_controller_map>` property.
 
 ----
-
 
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_MAIN_AXIS:
 
@@ -208,7 +218,6 @@ Key for the :ref:`input_controller_main_axis <api_ConfigData_input_controller_ma
 
 ----
 
-
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_SECONDARY_AXIS:
 
 	|godot_string| **KEY_INPUT_CONTROLLER_SECONDARY_AXIS** = ``"input_controller_secondary_axis"``
@@ -216,7 +225,6 @@ Key for the :ref:`input_controller_main_axis <api_ConfigData_input_controller_ma
 Key for the :ref:`input_controller_secondary_axis <api_ConfigData_input_controller_secondary_axis>` property.
 
 ----
-
 
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_ICON_TYPE:
 
@@ -226,7 +234,6 @@ Key for the :ref:`input_controller_icon_type <api_ConfigData_input_controller_ic
 
 ----
 
-
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_ECHO_PRE_DELAY:
 
 	|godot_string| **KEY_INPUT_CONTROLLER_ECHO_PRE_DELAY** = ``"input_controller_echo_pre_delay"``
@@ -234,7 +241,6 @@ Key for the :ref:`input_controller_icon_type <api_ConfigData_input_controller_ic
 Key for the :ref:`input_controller_echo_pre_delay <api_ConfigData_input_controller_echo_pre_delay>` property.
 
 ----
-
 
 .. _api_ConfigData_KEY_INPUT_CONTROLLER_ECHO_DELAY:
 
@@ -244,7 +250,6 @@ Key for the :ref:`input_controller_echo_delay <api_ConfigData_input_controller_e
 
 ----
 
-
 .. _api_ConfigData_KEY_VIRTUAL_KEYBOARD_LAYOUT:
 
 	|godot_string| **KEY_VIRTUAL_KEYBOARD_LAYOUT** = ``"virtual_keyboard_layout"``
@@ -253,6 +258,13 @@ Key for the :ref:`virtual_keyboard_layout <api_ConfigData_virtual_keyboard_layou
 
 ----
 
+.. _api_ConfigData_KEY_VIRTUAL_KEYBOARD_TYPE:
+
+	|godot_string| **KEY_VIRTUAL_KEYBOARD_TYPE** = ``"virtual_keyboard_type"``
+
+Key for the :ref:`virtual_keyboard_type <api_ConfigData_virtual_keyboard_type>` property.
+
+----
 
 .. _api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_CONTROLLER:
 
@@ -262,13 +274,19 @@ Key for the :ref:`virtual_keyboard_show_on_controller <api_ConfigData_virtual_ke
 
 ----
 
-
 .. _api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE:
 
 	|godot_string| **KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE** = ``"virtual_keyboard_show_on_mouse"``
 
 Key for the :ref:`virtual_keyboard_show_on_mouse <api_ConfigData_virtual_keyboard_show_on_mouse>` property.
 
+----
+
+.. _api_ConfigData_KEY_ACCESSIBILITY_SCREEN_READER_ENABLED:
+
+	|godot_string| **KEY_ACCESSIBILITY_SCREEN_READER_ENABLED** = ``"accessibility_screen_reader_enabled"``
+
+Key for the :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibility_screen_reader_enabled>` property.
 
 Properties
 ----------
@@ -283,13 +301,13 @@ Properties
 	* - |godot_bool|
 	  - :ref:`is_first_time <api_ConfigData_is_first_time>`
 	  - ``true``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`games_dir <api_ConfigData_games_dir>`
 	  - :ref:`FileUtils.get_home_dir() <api_FileUtils_get_home_dir>` + ``"/ROMS"``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`current_theme <api_ConfigData_current_theme>`
 	  - ``"default"``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`lang <api_ConfigData_lang>`
 	  - ``"en"``
 	* - |godot_bool|
@@ -301,13 +319,13 @@ Properties
 	* - |godot_int|
 	  - :ref:`render_resolution <api_ConfigData_render_resolution>`
 	  - ``100``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`region <api_ConfigData_region>`
 	  - ``"usa"``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`rating_system <api_ConfigData_rating_system>`
 	  - ``"esrb"``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`date_format <api_ConfigData_date_format>`
 	  - ``"mm/dd/yyyy"``
 	* - |godot_dictionary|
@@ -319,7 +337,10 @@ Properties
 	* - |godot_bool|
 	  - :ref:`scraper_ss_use_custom_account <api_ConfigData_scraper_ss_use_custom_account>`
 	  - ``false``
-	* - |godot_String|
+	* - |godot_int|
+	  - :ref:`scraper_ss_max_threads <api_ConfigData_scraper_ss_max_threads>`
+	  - ``6``
+	* - |godot_string|
 	  - :ref:`custom_input_remap <api_ConfigData_custom_input_remap>`
 	  - ``""``
 	* - |godot_dictionary|
@@ -343,14 +364,20 @@ Properties
 	* - |godot_float|
 	  - :ref:`input_controller_echo_delay <api_ConfigData_input_controller_echo_delay>`
 	  - ``0.15``
-	* - |godot_String|
+	* - |godot_string|
 	  - :ref:`virtual_keyboard_layout <api_ConfigData_virtual_keyboard_layout>`
 	  - ``"qwerty"``
+	* - |godot_string|
+	  - :ref:`virtual_keyboard_type <api_ConfigData_virtual_keyboard_type>`
+	  - ``"builtin"``
 	* - |godot_bool|
 	  - :ref:`virtual_keyboard_show_on_controller <api_ConfigData_virtual_keyboard_show_on_controller>`
 	  - ``true``
 	* - |godot_bool|
 	  - :ref:`virtual_keyboard_show_on_mouse <api_ConfigData_virtual_keyboard_show_on_mouse>`
+	  - ``false``
+	* - |godot_bool|
+	  - :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibility_screen_reader_enabled>`
 	  - ``false``
 
 ----
@@ -365,7 +392,7 @@ If ``true``, this is the first time the user is running RetroHub, therefore the 
 
 .. _api_ConfigData_games_dir:
 
-	|godot_String| **games_dir** = :ref:`FileUtils.get_home_dir() <api_FileUtils_get_home_dir>` + ``"/ROMS"``
+	|godot_string| **games_dir** = :ref:`FileUtils.get_home_dir() <api_FileUtils_get_home_dir>` + ``"/ROMS"``
 
 The user's game library. This is the directory where RetroHub will look for games.
 
@@ -373,7 +400,7 @@ The user's game library. This is the directory where RetroHub will look for game
 
 .. _api_ConfigData_current_theme:
 
-	|godot_String| **current_theme** = ``"default"``
+	|godot_string| **current_theme** = ``"default"``
 
 The currently loaded theme. If lacking any extension, it will load a default theme at ``res://default_themes/{current_theme}.pck``. Otherwise, the theme is loaded from ``<retrohub_config_dir>/themes/{current_theme}.``
 
@@ -381,7 +408,7 @@ The currently loaded theme. If lacking any extension, it will load a default the
 
 .. _api_ConfigData_lang:
 
-	|godot_String| **lang** = ``"en"``
+	|godot_string| **lang** = ``"en"``
 
 Language. Used throughout the UI and for themes that support localization as well.
 
@@ -416,7 +443,7 @@ Theme render resolution, in percentage. Doesn't affect RetroHub's UI. Can range 
 
 .. _api_ConfigData_region:
 
-	|godot_String| **region** = ``"usa"``
+	|godot_string| **region** = ``"usa"``
 
 User's preferred region.
 
@@ -429,7 +456,7 @@ Valid values:
 
 .. _api_ConfigData_rating_system:
 
-	|godot_String| **rating_system** = ``"esrb"``
+	|godot_string| **rating_system** = ``"esrb"``
 
 User's preferred age rating system.
 
@@ -442,7 +469,7 @@ Valid values:
 
 .. _api_ConfigData_date_format:
 
-	|godot_String| **date_format** = ``"mm/dd/yyyy"``
+	|godot_string| **date_format** = ``"mm/dd/yyyy"``
 
 User's preferred date formatting.
 
@@ -477,9 +504,20 @@ If ``true``, uses a user's account details when using ScreenScraper. Used to byp
 
 ----
 
+.. _api_ConfigData_scraper_ss_max_threads:
+
+	|godot_int| **scraper_ss_max_threads** = ``6``
+
+Maximum amount of threads to use when scraping with ScreenScraper with a custom account. Set this to limit thread usage to a specific number.
+
+.. note::
+	RetroHub will always check how many threads your account has available. If this value is bigger than your allowed thread count, RetroHub will respect your account's thread limit.
+
+----
+
 .. _api_ConfigData_custom_input_remap:
 
-	|godot_String| **custom_input_remap** = ``""``
+	|godot_string| **custom_input_remap** = ``""``
 
 Custom controller layout string. This follows the SDL format. See :ref:`userguide_input_controller_layouts` for more information.
 
@@ -566,7 +604,7 @@ Delay in seconds between controller echo events. This dictactes the frequency of
 
 .. _api_ConfigData_virtual_keyboard_layout:
 
-	|godot_String| **virtual_keyboard_layout** = ``"qwerty"``
+	|godot_string| **virtual_keyboard_layout** = ``"qwerty"``
 
 Preferred virtual keyboard layout.
 
@@ -574,6 +612,18 @@ Valid values:
 	* ``"qwerty"``: QWERTY
 	* ``"qwertz"``: QWERTZ
 	* ``"azerty"``: AZERTY
+
+----
+
+.. _api_ConfigData_virtual_keyboard_type:
+
+	|godot_string| **virtual_keyboard_type** = ``"builtin"``
+
+What virtual keyboard to use.
+
+Valid values:
+	* ``"builtin"``: App built-in virtual keyboard
+	* ``"steam"``: Steam/Steam Deck virtual keyboard
 
 ----
 
@@ -591,3 +641,10 @@ If ``true``, shows the virtual keyboard when a controller is connected and a giv
 
 If ``true``, shows the virtual keyboard when a mouse click or touch event is done on a valid node.
 
+----
+
+.. _api_ConfigData_accessibility_screen_reader_enabled:
+
+	|godot_bool| **accessibility_screen_reader_enabled** = ``false``
+
+If ``true``, enables screen reader support.
