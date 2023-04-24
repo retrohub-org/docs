@@ -24,6 +24,8 @@ Methods
 	  - :ref:`globalize_date_dict <api_RegionUtils_globalize_date_dict>`
 	* - |godot_control|
 	  - :ref:`localize_age_rating <api_RegionUtils_localize_age_rating>`
+	* - |godot_int|
+	  - :ref:`localize_age_rating_idx <api_RegionUtils_localize_age_rating_idx>`
 	* - |godot_string|
 	  - :ref:`localize_system_name <api_RegionUtils_localize_system_name>`
 
@@ -82,6 +84,18 @@ Localizes an age rating string to the user's preferred age rating system. This r
 
 	# User prefers PEGI
 	RegionUtils.localize_age_rating("2/3/4") # Returns a Control with the PEGI 12 rating icon
+
+----
+
+.. _api_RegionUtils_localize_age_rating_idx:
+
+	|godot_int| **localize_age_rating_idx** ()
+Returns the internal index for age rating strings (e.g. ``"0/3/2"``). This is useful if you want to use the age rating string in your own code.
+
+.. code-block:: gdscript
+
+	# User prefers PEGI
+	RegionUtils.localize_age_rating_idx() # Returns idx 1
 
 ----
 
