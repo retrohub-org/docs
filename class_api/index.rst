@@ -31,3 +31,4 @@ Utils
 	utils/RegionUtils
 	utils/FileUtils
 	utils/JSONUtils
+	utils/TTS

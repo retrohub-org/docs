@@ -13,7 +13,12 @@
 .. |godot_video_stream| replace:: `VideoStream <https://docs.godotengine.org/en/3.5/classes/class_videostream.html#class-videostream>`__
 
 .. |godot_control| replace:: `Control <https://docs.godotengine.org/en/3.5/classes/class_control.html#class-control>`__
+.. |godot_label| replace:: `Label <https://docs.godotengine.org/en/3.5/classes/class_label.html#class-label>`__
 .. |godot_lineedit| replace:: `LineEdit <https://docs.godotengine.org/en/3.5/classes/class_lineedit.html#class-lineedit>`__
 .. |godot_textedit| replace:: `TextEdit <https://docs.godotengine.org/en/3.5/classes/class_textedit.html#class-textedit>`__
 .. |godot_flowcontainer| replace:: `FlowContainer <https://docs.godotengine.org/en/3.5/classes/class_flowcontainer.html#class-flowcontainer>`__
 .. |godot_popupmenu| replace:: `PopupMenu <https://docs.godotengine.org/en/3.5/classes/class_popupmenu.html#class-popupmenu>`__
+.. |godot_tree| replace:: `Tree <https://docs.godotengine.org/en/3.5/classes/class_tree.html#class-tree>`__
+.. |godot_tree_item| replace:: `TreeItem <https://docs.godotengine.org/en/3.5/classes/class_treeitem.html#class-treeitem>`__
+.. |godot_range| replace:: `Range <https://docs.godotengine.org/en/3.5/classes/class_range.html#class-range>`__
+.. |godot_popup_menu| replace:: `PopupMenu <https://docs.godotengine.org/en/3.5/classes/class_popupmenu.html#class-popupmenu>`__
