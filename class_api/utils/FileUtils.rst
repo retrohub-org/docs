@@ -61,7 +61,7 @@ Tests whether the supplied path(s) exist in the user's system. If ``paths`` is a
 
 .. _api_FileUtils_ensure_path:
 
-	|godot_string| **ensure_path** (path: |godot_string|)
+	void **ensure_path** (path: |godot_string|)
 
 Recursively creates the directory structure of the specified path, ensuring all subfolders exist
 

@@ -25,4 +25,5 @@ Specific Information
 .. toctree::
 	:maxdepth: 1
 
-	specific/aspect_ratios.rst
+	specific/aspect_ratios
+	specific/accessibility_screen_readers
