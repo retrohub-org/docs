@@ -14,9 +14,9 @@ RetroHub runs using the Godot Engine. Therefore, a theme is essentially a Godot 
 
 If you never coded in Godot before, we suggest you take some time learning it before starting with theme development. A few good resources to start with:
 
-- `Your first 2D game <https://docs.godotengine.org/en/3.5/getting_started/first_2d_game/index.html>`_: Step-by-step tutorial on how to create 2D content
-- `Your first 3D game <https://docs.godotengine.org/en/3.5/getting_started/first_3d_game/index.html>`_: Step-by-step tutorial on how to create 3D content, if you wish to create 3D themes.
-- `Using signals <https://docs.godotengine.org/en/3.5/getting_started/step_by_step/signals.html>`_: Lesson which teaches signals, a core concept of Godot which RetroHub depends on heavily.
+- `Your first 2D game <https://docs.godotengine.org/en/4.1/getting_started/first_2d_game/index.html>`_: Step-by-step tutorial on how to create 2D content
+- `Your first 3D game <https://docs.godotengine.org/en/4.1/getting_started/first_3d_game/index.html>`_: Step-by-step tutorial on how to create 3D content, if you wish to create 3D themes.
+- `Using signals <https://docs.godotengine.org/en/4.1/getting_started/step_by_step/signals.html>`_: Lesson which teaches signals, a core concept of Godot which RetroHub depends on heavily.
 
 Contents
 --------

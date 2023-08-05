@@ -5,7 +5,7 @@ Before starting, you need to setup the necessary tools, and prepare the project 
 
 What you'll need
 ----------------
-Firstly, you'll need to get the official `Godot Editor v3.5 <https://godotengine.org/download>`_. Although RetroHub uses a custom version of Godot, the themes can be developed on the official version.
+Firstly, you'll need to get the official `Godot Editor v4.1 <https://godotengine.org/download>`_. Although RetroHub uses a custom version of Godot, the themes can be developed on the official version.
 
 Next, you need a project pre-configured with RetroHub's settings, such as input keys, addons, etc... For that, we created a bootstrap project, which is a base that can be used for developing any theme. Download `retrohub_bootstrap_theme <https://github.com/retrohub-org/retrohub-bootstrap-theme>`_ and open it in Godot.
 
@@ -23,7 +23,7 @@ The first time you open the project, it will take some time to import resources.
 
 .. image:: assets/01-project_settings_plugins.png
 
-- Close the project settings, and move to the **RetroHub** tab, nex to the **FileSystem** tab.
+- Close the project settings, and move to the **RetroHub** tab, next to the **FileSystem** tab.
 
 .. image:: assets/01-retrohub.png
 
@@ -31,7 +31,7 @@ The first time you open the project, it will take some time to import resources.
 	- **ID:** my_first_theme
 	- **Name:** My First Theme
 	- **Description:** This is my first theme.
-	- **Icon:** Load the default ``icon.png``
+	- **Icon:** Load the default ``icon.svg``
 	- **Author(s):** *your name*
 	- **Version:** 1.0.0
 	- **URL:** *a personal URL of your choice, or leave the default value*
@@ -53,7 +53,7 @@ All this information is stored in a ``theme.json`` file at the root of your proj
 Structure
 ---------
 
-This project start with a base structure set in place. We recommend following it for this tutorial, but you're free to structure your project as you prefer.
+This project starts with a base structure set in place. We recommend following it for this tutorial, but you're free to structure your project as you prefer.
 
 The main scene is called ``Theme.tscn``. It contains just a scene root, with a ``Logic.gd`` script attached. This script connects to plenty of RetroHub signals, and has detailed comments explaining each signal logic.
 

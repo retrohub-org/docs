@@ -84,9 +84,9 @@ This method should return the text to be spoken, which will be appended to the d
 
 .. _api_TTS_tts_popup_menu_item_text:
 
-	|godot_string| **tts_popup_menu_item_text** (idx: |godot_int|, menu: |godot_popup_menu|)
+	|godot_string| **tts_popup_menu_item_text** (idx: |godot_int|, menu: |godot_popupmenu|)
 
-Specific TTS text for a focused |godot_popup_menu| node. It supplies the currently selected menu item.
+Specific TTS text for a focused |godot_popupmenu| node. It supplies the currently selected menu item.
 
 This method should return the text to be spoken, which will be appended to the default implementation. If it returns an empty string, the TTS system will continue traversing the parent methods, and use the default implementation if no further node overrides it.
 

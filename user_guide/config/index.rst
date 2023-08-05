@@ -25,6 +25,11 @@ Graphics
 - **Enable V-Sync**: Enable V-Sync
 - **Render resolution**: Resolution to render the theme at. Main UI is not affected.
 
+Accessibility
+^^^^^^^^^^^^^
+
+- **Enable screen reader**: Enables a screen reader to read the interface out loud.
+
 Input
 -----
 

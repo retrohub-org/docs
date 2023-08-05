@@ -61,7 +61,7 @@ Globalizes a previously localized date with :ref:`localize_date <api_RegionUtils
 
 	|godot_string| **globalize_date_dict** (date_dict: |godot_dictionary|, source_format: |godot_string| = ``""``)
 
-Globalizes a date dictionary coming from `Godot <https://docs.godotengine.org/en/3.5/classes/class_time.html#class-time-method-get-datetime-dict-from-system>`_ back to a global ISO8601 format. ``source_format`` can be specified to tell in which format the string is (one of :ref:`date_format <api_ConfigData_date_format>`), otherwise leave it empty to use the current user's region.
+Globalizes a date dictionary coming from `Godot <https://docs.godotengine.org/en/4.1/classes/class_time.html#class-time-method-get-datetime-dict-from-system>`_ back to a global ISO8601 format. ``source_format`` can be specified to tell in which format the string is (one of :ref:`date_format <api_ConfigData_date_format>`), otherwise leave it empty to use the current user's region.
 
 .. code-block:: gdscript
 
@@ -90,6 +90,7 @@ Localizes an age rating string to the user's preferred age rating system. This r
 .. _api_RegionUtils_localize_age_rating_idx:
 
 	|godot_int| **localize_age_rating_idx** ()
+
 Returns the internal index for age rating strings (e.g. ``"0/3/2"``). This is useful if you want to use the age rating string in your own code.
 
 .. code-block:: gdscript

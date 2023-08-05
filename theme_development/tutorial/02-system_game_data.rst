@@ -1,7 +1,7 @@
 System & Game Data
 ==================
 
-RetroHub shares information through data classes. There are two main ones you'll be working with: ``RetroHubSystemData`` for system information, and ``RetroHubGameData`` for game data. These arrive from ``system_received`` and ``game_received`` signals respectively.
+RetroHub shares information through data classes. There are two main ones you'll be working with: :ref:`api_RetroHubSystemData` for system information, and :ref:`api_RetroHubGameData` for game data. These arrive from ``system_received`` and ``game_received`` signals respectively.
 
 If you look at the ``Logic.gd`` script, you'll notice there's some code for reading info from these data classes::
 

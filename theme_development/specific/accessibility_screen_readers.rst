@@ -7,12 +7,9 @@ Accessibility - Supporting screen readers
 
 A `screen reader <https://en.wikipedia.org/wiki/Screen_reader>`_ is a dedicated software that reads aloud content from the user's screen. It is used by people with partial or full visual impairments.
 
-RetroHub supports screen readers in its interface by bundling two addons that together provide screen reader support for Godot projects: `godot-accessibility <https://github.com/lightsoutgames/godot-accessibility/>`_ for out-of-the-box support for Godot's UI nodes, and `godot-tts <https://github.com/lightsoutgames/godot-tts>`_ for interfacing with existing TTS software.
+RetroHub supports screen readers in its interface by bundling `godot-accessibility <https://github.com/lightsoutgames/godot-accessibility/>`_ for out-of-the-box support for Godot's UI nodes.
 
-These addons were modified for RetroHub, and this page describes their functionality and how your theme can be adapted for screen reader usage.
-
-.. note::
-	Godot now has `native interfacing with TTS services <https://docs.godotengine.org/en/stable/tutorials/audio/text_to_speech.html>`_, but in testing it still isn't as reliable as the TTS addon. For now, this solution will stay, and in the future RetroHub will switch to the native solution when more stable.
+This addon was heavily modified for RetroHub, and this page describes it's functionality and how your theme can be adapted for screen reader usage.
 
 Fundamentals
 ------------
@@ -51,7 +48,7 @@ To support one-dimensional movement and selection on the UI, RetroHub changes th
 
 If you need more control on what neighbor nodes get focused, add a ``AccessibilityFocus`` node to the parent node, and set the ``previous`` and ``next`` properties to the appropriate nodes. Likewise, if there's an element that doesn't make sense to be focusable for 1D UI, you can set the ``focus_mode`` property accordingly.
 
-It is also extremely important to make the UI navigation deterministic. Test your theme to ensure that when you cycle through the UI backwards, the same elements are being focused in the reverse order. You can still have the concept of entering (``rh_accept`) and exiting (``rh_back``) from certain elements for more specialized navigation.
+It is also extremely important to make the UI navigation deterministic. Test your theme to ensure that when you cycle through the UI backwards, the same elements are being focused in the reverse order. You can still have the concept of entering (``rh_accept``) and exiting (``rh_back``) from certain elements for more specialized navigation.
 
 The remaining UI interactions, such as sliding (``rh_left_trigger``/``rh_right_trigger``), do not need any special handling, other than making the user aware that these actions are available.
 
