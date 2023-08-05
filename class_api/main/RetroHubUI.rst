@@ -167,7 +167,7 @@ Methods
 
 	void **filesystem_filters** (filters: |godot_array|)
 
-Set file filters for the file/directory dialog. Works exactly the same as Godot's `FileDialog.filters <https://docs.godotengine.org/en/3.5/classes/class_filedialog.html#class-filedialog-property-filters>`_.
+Set file filters for the file/directory dialog. Works exactly the same as Godot's `FileDialog.filters <https://docs.godotengine.org/en/4.1/classes/class_filedialog.html#class-filedialog-property-filters>`_.
 
 .. code-block:: gdscript
 
@@ -229,7 +229,7 @@ Load an app-default icon.
 
 	void **show_virtual_keyboard** ()
 
-Asks RetroHub to show the virtual keyboard. The node you want to receive key events must be focused (`Control.grab_focus() <https://docs.godotengine.org/en/3.5/classes/class_control.html#class-control-method-grab-focus>`_) before calling this method. The virtual keyboard will then send raw `InputEventKey <https://docs.godotengine.org/en/3.5/classes/class_inputeventkey.html>`_ events to the focused node.
+Asks RetroHub to show the virtual keyboard. The node you want to receive key events must be focused (`Control.grab_focus() <https://docs.godotengine.org/en/4.1/classes/class_control.html#class-control-method-grab-focus>`_) before calling this method. The virtual keyboard will then send raw `InputEventKey <https://docs.godotengine.org/en/4.1/classes/class_inputeventkey.html>`_ events to the focused node.
 
 .. note::
 	RetroHub automatically opens the virtual keyboard for |godot_lineedit| and |godot_textedit| nodes. This method is only needed if you want to show the virtual keyboard for other nodes.

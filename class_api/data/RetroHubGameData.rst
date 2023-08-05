@@ -224,8 +224,6 @@ Methods
 	  - Name
 	* - |godot_bool|
 	  - :ref:`sort <api_RetroHubGameData_sort>`
-	* - :ref:`api_RetroHubGameData`
-	  - :ref:`duplicate <api_RetroHubGameData_duplicate>`
 	* - void
 	  - :ref:`copy_from <api_RetroHubGameData_copy_from>`
 
@@ -235,7 +233,7 @@ Methods
 
 	|godot_bool| **sort** (a: :ref:`api_RetroHubGameData`, b: :ref:`api_RetroHubGameData`)
 
-Custom sorting implementation for :ref:`api_RetroHubGameData` instances. This is used internally by RetroHub to sort games by name, in ascending order. You can also use this if you need to sort game datas, by using `Array.sort_custom() <https://docs.godotengine.org/en/3.5/classes/class_array.html#class-array-method-sort-custom>`_.
+Custom sorting implementation for :ref:`api_RetroHubGameData` instances. This is used internally by RetroHub to sort games by name, in ascending order. You can also use this if you need to sort game datas, by using `Array.sort_custom() <https://docs.godotengine.org/en/4.1/classes/class_array.html#class-array-method-sort-custom>`_.
 
 .. code-block:: gdscript
 
@@ -247,16 +245,8 @@ Custom sorting implementation for :ref:`api_RetroHubGameData` instances. This is
 
 ----
 
-.. _api_RetroHubGameData_duplicate:
-
-	:ref:`api_RetroHubGameData` **duplicate** ()
-
-Returns a duplicate of this game data. Every property is copied by value, so it is safe to modify a duplicated entry without affecting the original.
-
-----
-
 .. _api_RetroHubGameData_copy_from:
 
 	void **copy_from** (other: :ref:`api_RetroHubGameData`)
 
-Similar to :ref:`duplicate <api_RetroHubGameData_duplicate>`, but doesn't return a new instance.
+Copies all information from existing game data, creating a duplicate.

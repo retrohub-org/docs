@@ -18,6 +18,8 @@ Constants
 	* - Type
 	  - Name
 	* - |godot_string|
+	  - :ref:`KEY_CONFIG_VERSION <api_ConfigData_KEY_CONFIG_VERSION>`
+	* - |godot_string|
 	  - :ref:`KEY_IS_FIRST_TIME <api_ConfigData_KEY_IS_FIRST_TIME>`
 	* - |godot_string|
 	  - :ref:`KEY_GAMES_DIR <api_ConfigData_KEY_GAMES_DIR>`
@@ -71,6 +73,14 @@ Constants
 	  - :ref:`KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE <api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE>`
 	* - |godot_bool|
 	  - :ref:`KEY_ACCESSIBILITY_SCREEN_READER_ENABLED <api_ConfigData_KEY_ACCESSIBILITY_SCREEN_READER_ENABLED>`
+
+----
+
+.. _api_ConfigData_KEY_CONFIG_VERSION:
+
+	|godot_string| **KEY_CONFIG_VERSION** = ``"config_version"``
+
+Key for the :ref:`config_version <api_ConfigData_config_version>` property.
 
 ----
 
@@ -298,6 +308,9 @@ Properties
 	* - Type
 	  - Name
 	  - Default
+	* - |godot_int|
+	  - :ref:`config_version <api_ConfigData_config_version>`
+	  - ``1``
 	* - |godot_bool|
 	  - :ref:`is_first_time <api_ConfigData_is_first_time>`
 	  - ``true``
@@ -379,6 +392,14 @@ Properties
 	* - |godot_bool|
 	  - :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibility_screen_reader_enabled>`
 	  - ``false``
+
+----
+
+.. _api_ConfigData_config_version:
+
+	|godot_int| **config_version** = ``1``
+
+Specifies the latest internal configuration version. This is used internally to determine if the configuration needs to be updated.
 
 ----
 
@@ -527,7 +548,7 @@ Custom controller layout string. This follows the SDL format. See :ref:`userguid
 
 	|godot_dictionary| **input_key_map** = |godot_dictionary|
 
-Input map for keyboard actions. Keys are RetroHub's input actions, available on :ref:`theme_input_input_actions`. Values are KEY_* constants available in `@GlobalScope <https://docs.godotengine.org/en/3.5/classes/class_%40globalscope.html#class-globalscope-constant-key-ydiaeresis>`__.
+Input map for keyboard actions. Keys are RetroHub's input actions, available on :ref:`theme_input_input_actions`. Values are KEY_* constants available in `@GlobalScope <https://docs.godotengine.org/en/4.1/classes/class_%40globalscope.html#enum-globalscope-key>`__.
 
 ----
 
@@ -535,7 +556,7 @@ Input map for keyboard actions. Keys are RetroHub's input actions, available on 
 
 	|godot_dictionary| **input_controller_map** = |godot_dictionary|
 
-Input map for controller actions. Keys are RetroHub's input actions, available on :ref:`theme_input_input_actions`. Values are JOY_* constants available in `@GlobalScope <https://docs.godotengine.org/en/3.5/classes/class_%40globalscope.html#class-globalscope-constant-joy-openvr-touchpady>`__.
+Input map for controller actions. Keys are RetroHub's input actions, available on :ref:`theme_input_input_actions`. Values are JOY_* constants available in `@GlobalScope <https://docs.godotengine.org/en/4.1/classes/class_%40globalscope.html#enum-globalscope-joybutton>`__.
 
 ----
 

@@ -1,7 +1,7 @@
 Download
 ========
 
-RetroHub can be downloaded from `GitHub releases <https://github.com/retrohub-org/retrohub/releases>`_. The current latest release is `v0.1.3-beta <https://github.com/retrohub-org/retrohub/releases/tag/v0.1.3-beta>`_.
+RetroHub can be downloaded from `GitHub releases <https://github.com/retrohub-org/retrohub/releases>`_. The current latest release is `v0.2.0-beta <https://github.com/retrohub-org/retrohub/releases/tag/v0.2.0-beta>`_.
 
 RetroHub is available for **Windows**, **macOS** and **Linux**.
 
@@ -19,7 +19,7 @@ macOS
 macOS releases work as an app bundle. Run the downloaded ``Retrohub.App``.
 
 .. warning::
-	RetroHub is signed, but not notarized, so you need to enable apps from untrusted sources in your `Secrity & Privacy settings <https://support.apple.com/en-us/HT202491>`_. For more information on what to do on specific scenarios, check `this page <https://docs.godotengine.org/en/3.5/tutorials/export/running_on_macos.html>`_.
+	RetroHub is signed, but not notarized, so you need to enable apps from untrusted sources in your `Secrity & Privacy settings <https://support.apple.com/en-us/HT202491>`_. For more information on what to do on specific scenarios, check `this page <https://docs.godotengine.org/en/4.1/tutorials/export/running_on_macos.html>`_.
 
 Linux
 -----

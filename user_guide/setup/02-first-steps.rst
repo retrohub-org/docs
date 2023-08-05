@@ -7,6 +7,9 @@ The first time you launch RetroHub, you'll be presented with a first-time wizard
 
 This setup will bootstrap your retro gaming library and set some default settings. Each section is described in more detail below.
 
+.. note::
+	To enable the screenreader, you can press ``Ctrl`` on this screen.
+
 Region
 ------
 
@@ -17,6 +20,9 @@ Region is used to set up some set some behavior and visual settings used through
 - **Rating System:** Game age rating system to use.
 - **Date Format:** Format to present date & time.
 - **System Names:** Names to use for consoles with region-specific names.
+
+.. note::
+	Region settings are merely cosmetic and have no impact whatsoever on the games you can play.
 
 Import Settings
 ---------------

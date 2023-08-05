@@ -10,8 +10,7 @@ A scraper is a tool to automatically fill up game's metadata and media. RetroHub
 
 Planned support for future scraper services:
 
-- `TheGamesDB <https://thegamesdb.net/>`_
-- `EmuMovies <https://www.emumovies.com/>`_
+- `IGDB <https://www.igdb.com/>`_
 
 Usage
 -----

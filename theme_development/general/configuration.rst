@@ -15,8 +15,8 @@ Use :ref:`api_RetroHubConfig`'s ``theme_config`` methods and signals to access a
 	var dark_mode := false
 
 	func _ready():
-		RetroHubConfig.connect("theme_config_ready", self, "_on_theme_config_ready")
-		RetroHubConfig.connect("theme_config_updated", self, "_on_theme_config_updated")
+		RetroHubConfig.theme_config_ready.connect(_on_theme_config_ready)
+		RetroHubConfig.theme_config_updated.connect(_on_theme_config_updated)
 
 	func _on_theme_config_ready():
 		dark_mode = RetroHubConfig.get_theme_config("dark_mode", false)

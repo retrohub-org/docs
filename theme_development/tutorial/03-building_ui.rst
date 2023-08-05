@@ -23,32 +23,36 @@ This is enough to warn the user. Ensure this is what appears if you try running 
 Creating system views
 ---------------------
 
-Let's start by properly showing each system name. Let's create a new scene called ``SystemView.tscn``, inheriting from **VBoxContainer**:
+Let's start by properly showing each system name. Let's create a new scene called ``system_view.tscn``, inheriting from **VBoxContainer**:
 
 .. image:: assets/04-systemview_new.png
 .. image:: assets/04-systemview_new_vbox.png
 
-For now we will just show each system full name. Add a label to it called **SystemName**, enable **Autowrap**, and leave it empty (the content will be changed in code).
+Set it's layout to fill the entire screen as well.
+
+.. image:: assets/04-systemview_layout.png
+
+For now we will just show each system full name. Add a label to it called **SystemName**, set it's **Autowrap** property to **Word**, and leave it empty (the content will be changed in code).
 
 .. image:: assets/04-systemview_systemname.png
 
-Now add a script to the root **SystemView**, which will be called **SystemView.gd**. Let's add a way for easily setting the system name from outside this scene:
+Now add a script to the root **SystemView**, which will be called **system_view.gd**. Let's add a way for easily setting the system name from outside this scene:
 
 .. code-block:: gdscript
 
 	extends VBoxContainer
 
-	onready var system_name_label := $SystemName
+	@onready var system_name_label := $SystemName
 
-	var system_data : RetroHubSystemData setget set_system_data
-
-	func set_system_data(_system_data: RetroHubSystemData):
-		system_data = _system_data
+	var system_data : RetroHubSystemData:
+		set(value):
+			system_data = value
 
 	func _ready():
-		system_name_label.name = system_data.fullname
+		system_name_label.text = system_data.fullname
 
-Now, we need to instance this object at runtime in code when each system is received. Go back to ``Theme.tscn``. We may need to instance a lot of scene views and we want them to be presented neatly. For that we're gonna create a **VBoxContainer** to add them vertically, and a **ScrollContainer** to create scroll bars if the content doesn't fit on screen.
+
+Now, we need to instance this object at runtime when each system is received. Go back to ``Theme.tscn``. We may need to instance a lot of scene views and we want them to be presented neatly. For that we're gonna create a **VBoxContainer** to add them vertically, and a **ScrollContainer** to create scroll bars if the content doesn't fit on screen.
 
 Start with the **ScrollContainer**, and give it a good amount of vertical size, while only occupying horizontaly about 30% of the screen, to leave space for game metadata later on.
 
@@ -64,13 +68,13 @@ Now, edit the script under the **Theme** root node. Add references to the nodes 
 
 	extends Node
 
-	onready var no_games_label := $NoGames
-	onready var system_view_container := $ScrollContainer/SystemViewContainer
+	@onready var no_games_label := $NoGames
+	@onready var system_view_container := $ScrollContainer/SystemViewContainer
 
 	# _ready function, called everytime the theme is loaded, and only once
 	func _ready():
 		# App related signals
-		RetroHub.connect("app_initializing", self, "_on_app_initializing")
+		RetroHub.app_initializing.connect(_on_app_initializing)
 		...
 
 Then move to the existing ``_on_system_receive_start`` function. This function is called right before RetroHub starts sending all system data, so it's the perfect place to remove our **NoGames** label:
@@ -91,7 +95,7 @@ Now, let's start creating our **SystemView** instances. Edit the ``_on_system_re
 	##
 	## System information always arrives before game information.
 	func _on_system_received(data: RetroHubSystemData):
-		var system_view = preload("res://SystemView.tscn").instance()
+		var system_view = preload("res://system_view.tscn").instance()
 		system_view.system_data = data
 		system_view_container.add_child(system_view)
 
@@ -104,26 +108,26 @@ Creating game entries
 
 We have a scene that handles system information. So, we can have it also handle any game data from that system. Let's make it so that each game data shows up as a button under each system name.
 
-Create a new scene called **GameEntry.tscn**, this time inheriting from a **Button**.
+Create a new scene called **game_entry.tscn**, this time inheriting from a **Button**.
 
 .. image:: assets/04-systemview_new.png
 .. image:: assets/04-gameentry_new_button.png
 
-Add a script to it, which will be called **GameEntry.gd**. The process is similar to what we did in the system view; we receive data, and set the label to some information:
+Add a script to it, which will be called **game_entry.gd**. The process is similar to what we did in the system view; we receive data, and set the label to some information:
 
 .. code-block:: gdscript
 
 	extends Button
 
-	var game_data : RetroHubGameData setget set_game_data
-
-	func set_game_data(_game_data: RetroHubgameData):
-		game_data = _game_data
+	var game_data : RetroHubGameData:
+		set(value):
+			game_data = value
 
 	func _ready():
-		text = game_data.name
+			text = game_data.name
 
-Let's prepare the **SceneView** scene to properly handle **GameEntry** instances. Add a **HFlowContainer** after the **SystemName** label, and rename it to **GameEntryContainer**. This container looks better when rearranging children with different sizes, which happens as games have titles with different lengths.
+
+Let's prepare the **SystemView** scene to properly handle **GameEntry** instances. Add a **HFlowContainer** after the **SystemName** label, and rename it to **GameEntryContainer**. This container looks better when rearranging children with different sizes, which happens as games have titles with different lengths.
 
 .. image:: assets/04-gameentry_gameentrycontainer.png
 
@@ -133,22 +137,20 @@ Now, instead of instancing game entries from the **Theme.tscn** like we did for 
 
 	extends VBoxContainer
 
-	onready var system_name_label := $SystemName
-	onready var game_entry_container := $GameEntryContainer
+	@onready var system_name_label := $SystemName
+	@onready var game_entry_container := $GameEntryContainer
 
-	var system_data : RetroHubSystemData setget set_system_data
-
-	func set_system_data(_system_data: RetroHubSystemData):
-		system_data = _system_data
+	var system_data : RetroHubSystemData:
+		set(value):
+			system_data = value
 
 	func _ready():
 		system_name_label.text = system_data.fullname
-		
-		RetroHub.connect("game_received", self, "_on_game_received")
+		RetroHub.game_received.connect(_on_game_received)
 
 	func _on_game_received(game_data: RetroHubGameData):
 		if game_data.system == system_data:
-			var game_entry = preload("res://GameEntry.tscn").instance()
+			var game_entry = preload("res://game_entry.tscn").instantiate()
 			game_entry.game_data = game_data
 			game_entry_container.add_child(game_entry)
 
