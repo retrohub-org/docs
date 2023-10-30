@@ -13,8 +13,9 @@ Basic Information
 ~~~~~~~~~~~~~~~~~
 - **Short name:** ``scummvm``
 - **Type:** Game Engine
-- **Supported extensions:** 1
+- **Supported extensions:** 2
 	- .scummvm
+	- .svm
 
 Notes
 ~~~~~

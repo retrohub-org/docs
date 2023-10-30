@@ -34,3 +34,5 @@ Emulators
 - :ref:`emulator_ares`
 - :ref:`emulator_mednafen`
 - :ref:`emulator_sameboy`
+- :ref:`emulator_emulicious`
+- :ref:`emulator_mesen`

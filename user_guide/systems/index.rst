@@ -54,16 +54,12 @@ System list
 	system_list/zmachine
 	system_list/zx81
 	system_list/zxspectrum
-	system_list/cavestory
 	system_list/chailove
 	system_list/doom
-	system_list/godot
 	system_list/lutro
-	system_list/openbor
 	system_list/pico8
 	system_list/scummvm
 	system_list/solarus
-	system_list/stratagus
 	system_list/tic80
 	system_list/3do
 	system_list/64dd

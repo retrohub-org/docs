@@ -29,7 +29,7 @@ Methods
 	* - Type
 	  - Name
 	* - |godot_string|
-	  - :ref:`test_for_valid_paths <api_FileUtils_test_for_valid_paths>`
+	  - :ref:`test_for_valid_path <api_FileUtils_test_for_valid_path>`
 	* - void
 	  - :ref:`ensure_path <api_FileUtils_ensure_path>`
 	* - |godot_string|
@@ -51,9 +51,9 @@ Methods
 
 ----
 
-.. _api_FileUtils_test_for_valid_paths:
+.. _api_FileUtils_test_for_valid_path:
 
-	|godot_string| **test_for_valid_paths** (paths: |godot_string| \| |godot_array|)
+	|godot_string| **test_for_valid_path** (paths: |godot_string| \| |godot_array|)
 
 Tests whether the supplied path(s) exist in the user's system. If ``paths`` is a |godot_string|, tests if it exists. Otherwise, if it is a |godot_array|, tests for all strings inside and returns the first valid one. Returns ``""`` if no valid path is found.
 

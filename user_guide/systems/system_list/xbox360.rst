@@ -13,7 +13,8 @@ Basic Information
 ~~~~~~~~~~~~~~~~~
 - **Short name:** ``xbox360``
 - **Type:** Modern Console
-- **Supported extensions:** 1
+- **Supported extensions:** 2
+	- .iso
 	- .xex
 
 Notes
@@ -23,3 +24,4 @@ There are no special notes for this system. Games should work out of the box.
 
 Emulators
 ~~~~~~~~~
+- :ref:`emulator_xenia`

@@ -13,11 +13,8 @@ Basic Information
 ~~~~~~~~~~~~~~~~~
 - **Short name:** ``ps3``
 - **Type:** Modern Console
-- **Supported extensions:** 4
-	- .self
-	- .elf
-	- .pkg
-	- .iso
+- **Supported extensions:** 1
+	- PARAM.sfo
 
 Notes
 ~~~~~
@@ -26,3 +23,4 @@ There are no special notes for this system. Games should work out of the box.
 
 Emulators
 ~~~~~~~~~
+- :ref:`emulator_rpcs3`

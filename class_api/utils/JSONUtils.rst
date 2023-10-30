@@ -16,8 +16,10 @@ Methods
 
 	* - Type
 	  - Name
-	* - |godot_dictionary|
+	* - |godot_dictionary| / |godot_array|
 	  - :ref:`load_json_file <api_JSONUtils_load_json_file>`
+	* - |godot_dictionary| / |godot_array|
+	  - :ref:`load_json_buffer <api_JSONUtils_load_json_buffer>`
 	* - void
 	  - :ref:`save_json_file <api_JSONUtils_save_json_file>`
 	* - void
@@ -31,9 +33,17 @@ Methods
 
 .. _api_JSONUtils_load_json_file:
 
-	|godot_dictionary| **load_json_file** (filepath: |godot_string|)
+	|godot_dictionary| / |godot_array| **load_json_file** (filepath: |godot_string|)
 
-Loads a JSON file and returns it as a dictionary. If the file does not exist or is invalid, an empty dictionary is returned.
+Loads a JSON file and returns it as a |godot_dictionary| or as an |godot_array|. If the file does not exist or is invalid, an empty dictionary is returned.
+
+----
+
+.. _api_JSONUtils_load_json_buffer:
+
+	|godot_dictionary| / |godot_array| **load_json_buffer** (data: |godot_string|)
+
+Loads a JSON file from data in memory, and returns it as a |godot_dictionary| or as an |godot_array|. If the data is invalid, an empty dictionary is returned.
 
 ----
 

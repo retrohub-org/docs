@@ -44,23 +44,6 @@ Emitted when a config value of the theme has been updated. ``key`` is the same v
 
 ----
 
-.. _api_RetroHubConfig_system_data_updated:
-
-	**system_data_updated** (system_data: :ref:`api_RetroHubSystemData`)
-
-Emitted when a system data has been updated by the user. The reference doesn't change from the earlier data received from :ref:`system_received <api_RetroHub_system_received>`, so you can use it to test whether you need to update displayed information in your theme.
-
-.. code-block:: gdscript
-
-	connect("system_data_updated", self, "_on_system_data_updated")
-
-	func _on_system_data_updated(system_data):
-		if self.system_data == system_data:
-			# Update displayed information with new info
-			...
-
-----
-
 .. _api_RetroHubConfig_game_data_updated:
 
 	**game_data_updated** (game_data: :ref:`api_RetroHubGameData`)
@@ -123,4 +106,4 @@ Sets a theme config under the given ``key`` to ``value``. If the key doesn't exi
 Saves the theme config to disk. For every ``key`` that has been changed, the :ref:`theme_config_updated <api_RetroHubConfig_theme_config_updated>` signal is emitted.
 
 .. note::
-	If you're using the dedicated theme config scene, RetroHub will automatically call this function when the user leaves the configuration panel, and you only need to call :ref:`set_theme_config <api_RetroHubConfig_set_theme_config>`.
+	If you're using a dedicated theme config scene, RetroHub will automatically call this function by you when the theme is unloaded, and therefore you only need to use :ref:`set_theme_config <api_RetroHubConfig_set_theme_config>`.

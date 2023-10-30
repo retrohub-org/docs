@@ -15,7 +15,7 @@ Themes
 Downloading
 ~~~~~~~~~~~
 
-*TODO*
+*There currently aren't any existing community themes to download. This section will be documented once it gets more development.*
 
 .. _user_guide_setup_themes_installing:
 
@@ -24,9 +24,9 @@ Installing
 
 To install themes, move the theme file (``.pck`` extension) inside the ``themes`` folder in RetroHub's config folder:
 
-- **Windows:** ``C:\\Users\<user_name>\RetroHub``
-- **macOS:** ``/Users/<user_name>/.retrohub``
-- **Linux:** ``/home/<user_name>/.retrohub``
+- **Windows:** ``C:\\Users\<user_name>\RetroHub\themes``
+- **macOS:** ``/Users/<user_name>/.retrohub/themes``
+- **Linux:** ``/home/<user_name>/.retrohub/themes``
 
 You can also open the theme folder from the app's settings.
 

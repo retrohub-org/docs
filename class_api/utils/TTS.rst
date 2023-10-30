@@ -103,6 +103,8 @@ Methods
 	  - :ref:`speak <api_TTS_speak>`
 	* - void
 	  - :ref:`stop <api_TTS_stop>`
+	* - |godot_bool|
+	  - :ref:`is_speaking <api_TTS_is_speaking>`
 	* - |godot_string|
 	  - :ref:`singular_or_plural <api_TTS_singular_or_plural>`
 
@@ -127,6 +129,14 @@ Speaks the given text. If ``interrupt`` is ``true``, the current speech is inter
 	void **stop** ()
 
 Stops any current speech immediately.
+
+----
+
+.. _api_TTS_is_speaking:
+
+	|godot_bool| **is_speaking** ()
+
+Returns whether the TTS system is currently speaking any sentence.
 
 ----
 

@@ -9,6 +9,17 @@ Represents a game entry from the user's library. Holds all informations availabl
 
 The received object is unique and shared among the app. An instance can also be used to uniquely identify this game, which is done for other parts of the API.
 
+Enumerations
+------------
+
+.. _api_RetroHubGameData_BoxTextureRegions:
+
+enum **BoxTextureRegions**:
+
+- **BACK** - Back cover.
+- **SPINE** - Spine portion.
+- **FRONT** - Front cover.
+
 Properties
 ----------
 
@@ -70,6 +81,12 @@ Properties
 	* - |godot_string|
 	  - :ref:`last_played <api_RetroHubGameData_last_played>`
 	  - ``""``
+	* - |godot_string|
+	  - :ref:`emulator <api_RetroHubGameData_emulator>`
+	  - ``""``
+	* - |godot_dictionary|
+	  - :ref:`box_texture_regions <api_RetroHubGameData_box_texture_regions>`
+	  - ``{}``
 
 ----
 
@@ -213,6 +230,22 @@ The date the game was last played, in ISO8601 format. Use :ref:`RegionUtils.loca
 .. warning::
 	If never played before, the string will be set to ``"null"``.
 
+----
+
+.. _api_RetroHubGameData_emulator:
+
+	|godot_string| **emulator** = ``""``
+
+Used internally by RetroHub to specify a specific emulator to be used when launching the game.
+
+----
+
+.. _api_RetroHubGameData_box_texture_regions:
+
+	|godot_dictionary| **box_texture_regions** = ``{}``
+
+Defines regions of the game's box art texture. This allows you to extract specific regions of the box art, such as the front portion. See :ref:`RetroHubMedia.get_box_texture_region() <api_RetroHubMedia_get_box_texture_region>` for more information.
+
 Methods
 -------
 
@@ -241,7 +274,7 @@ Custom sorting implementation for :ref:`api_RetroHubGameData` instances. This is
 
 	game_datas.sort_custom(RetroHubGameData, "sort")
 
-	# game_datas will not be sorted by names
+	# game_datas will now be sorted by names
 
 ----
 

@@ -40,3 +40,5 @@ Emulators
 - :ref:`emulator_snes9x`
 - :ref:`emulator_ares`
 - :ref:`emulator_mednafen`
+- :ref:`emulator_mesen`
+- :ref:`emulator_bsnes`

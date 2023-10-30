@@ -28,4 +28,6 @@ Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
 - :ref:`emulator_ares`
+- :ref:`emulator_mgba`
 - :ref:`emulator_mednafen`
+- :ref:`emulator_vba-m`

@@ -36,3 +36,5 @@ Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
 - :ref:`emulator_ares`
+- :ref:`emulator_mame`
+- :ref:`emulator_mastergear`
