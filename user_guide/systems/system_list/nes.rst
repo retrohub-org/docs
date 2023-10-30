@@ -31,3 +31,4 @@ Emulators
 - :ref:`emulator_ares`
 - :ref:`emulator_mednafen`
 - :ref:`emulator_nestopia`
+- :ref:`emulator_mesen`

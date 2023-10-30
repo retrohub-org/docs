@@ -44,16 +44,42 @@ Methods
 
 	* - Type
 	  - Name
+	* - void
+	  - :ref:`clear_media_cache <api_RetroHubMedia_clear_media_cache>`
+	* - void
+	  - :ref:`clear_all_media_cache <api_RetroHubMedia_clear_all_media_cache>`
 	* - |godot_array|
 	  - :ref:`convert_type_bitmask_to_list <api_RetroHubMedia_convert_type_bitmask_to_list>`
 	* - |godot_string|
 	  - :ref:`convert_type_to_media_path <api_RetroHubMedia_convert_type_to_media_path>`
 	* - :ref:`api_RetroHubGameMediaData`
 	  - :ref:`retrieve_media_data <api_RetroHubMedia_retrieve_media_data>`
+	* - :ref:`api_RetroHubGameMediaData`
+	  - :ref:`retrieve_media_blurhash <api_RetroHubMedia_retrieve_media_blurhash>`
 	* - void
 	  - :ref:`retrieve_media_data_async <api_RetroHubMedia_retrieve_media_data_async>`
+	* - :ref:`api_RetroHubGameMediaData`
+	  - :ref:`retrieve_media_data_and_blurhash_async <api_RetroHubMedia_retrieve_media_data_and_blurhash_async>`
 	* - void
 	  - :ref:`cancel_media_data_async <api_RetroHubMedia_cancel_media_data_async>`
+	* - |godot_texture2d|
+	  - :ref:`get_box_texture_region <api_RetroHubMedia_get_box_texture_region>`
+
+----
+
+.. _api_RetroHubMedia_clear_media_cache:
+
+	void **clear_media_cache** (data: :ref:`api_RetroHubGameMediaData`)
+
+Clears the internal media cache for the given data. The media will thus be freed if the theme doesn't reference it anymore.
+
+----
+
+.. _api_RetroHubMedia_clear_all_media_cache:
+
+	void **clear_all_media_cache** ()
+
+Clears the entire internal media cache. Unreference data will be freed.
 
 ----
 
@@ -105,15 +131,29 @@ This function blocks while media is loaded, so if you want to load plenty of med
 	The :ref:`Type <api_RetroHubMedia_Type>` enum is a bitmask, so you can combine any types you need using the bitwise OR operator (``|``).
 
 .. warning::
-	Never assume a given media type is available. Always check that the requested media file is not ``null`` before using it.
+	Never assume a given media type is available. Always check that the requested media file is non ``null`` before using it.
+
+----
+
+.. _api_RetroHubMedia_retrieve_media_blurhash:
+
+	:ref:`api_RetroHubGameMediaData` **retrieve_media_blurhash** (game_data: :ref:`api_RetroHubGameData`, types: :ref:`Type <api_RetroHubMedia_Type>` = ``Type.ALL``)
+
+Fetches BlurHash data for existing game media, returning media data with blurred previews of the requested media types. Although the function is blocking, fetching a BlurHash is very quick, so this can be repeatedly called without freezing your theme.
+
+.. note::
+	The :ref:`Type <api_RetroHubMedia_Type>` enum is a bitmask, so you can combine any types you need using the bitwise OR operator (``|``).
+
+.. warning::
+	Never assume a given media type is available. Always check that the requested media file is non ``null`` before using it.
 
 ----
 
 .. _api_RetroHubMedia_retrieve_media_data_async:
 
-	void **retrieve_media_data_async** (game_data: :ref:`api_RetroHubGameData`, types: :ref:`Type <api_RetroHubMedia_Type>` = ``Type.ALL``)
+	void **retrieve_media_data_async** (game_data: :ref:`api_RetroHubGameData`, types: :ref:`Type <api_RetroHubMedia_Type>` = ``Type.ALL``, priority: |godot_bool| = ``false``)
 
-Retrieves media for the requested game data asynchronously. If ``types`` is not specified, all media types will be retrieved.
+Retrieves media for the requested game data asynchronously. If ``types`` is not specified, all media types will be retrieved. If ``priority`` is ``true``, the request will be given priority over pending async requests.
 
 This function returns immediately, and the :ref:`media_loaded <api_RetroHubMedia_media_loaded>` signal will be emitted when the media has finished loading. You should keep a reference to the supplied game data and types, to later be able to identify this request among others.
 
@@ -131,6 +171,23 @@ If game data doesn't have :ref:`has_media <api_RetroHubGameData_has_media>` set 
 			# This was the request we asked. Use media
 			...
 
+.. note::
+	The :ref:`Type <api_RetroHubMedia_Type>` enum is a bitmask, so you can combine any types you need using the bitwise OR operator (``|``).
+
+.. warning::
+	Never assume a given media type is available. Always check that the requested media file is not ``null`` before using it.
+
+----
+
+.. _api_RetroHubMedia_retrieve_media_data_and_blurhash_async:
+
+	:ref:`api_RetroHubGameMediaData` **retrieve_media_data_and_blurhash_async** (game_data: :ref:`api_RetroHubGameData`, types: :ref:`Type <api_RetroHubMedia_Type>` = ``Type.ALL``, priority: |godot_bool| = ``false``)
+
+Calls :ref:`retrieve_media_data_async <api_RetroHubMedia_retrieve_media_data_async>` and :ref:`retrieve_media_blurhash <api_RetroHubMedia_retrieve_media_blurhash>` at the same time. This provides you with a quick media preview while the media request is handled asynchronously.
+
+.. note::
+	The :ref:`Type <api_RetroHubMedia_Type>` enum is a bitmask, so you can combine any types you need using the bitwise OR operator (``|``).
+
 .. warning::
 	Never assume a given media type is available. Always check that the requested media file is not ``null`` before using it.
 
@@ -147,3 +204,23 @@ Cancels all pending asynchronous request done with :ref:`retrieve_media_data_asy
 
 .. note::
 	A request may still finish and be sent over the :ref:`media_loaded <api_RetroHubMedia_media_loaded>` signal even after calling this function.
+
+----
+
+.. _api_RetroHubMedia_get_box_texture_region:
+
+	|godot_texture2d| **get_box_texture_region** (game_data: :ref:`api_RetroHubGameData`, media_data: :ref:`api_RetroHubGameMediaData`, region: :ref:`RetroHubGameData.BoxTextureRegions <api_RetroHubGameData_BoxTextureRegions>`, rotate: |godot_bool| = ``true``)
+
+Extracts the specified box region from a game box art. This allows you to only use relevant portions of the box art, like the front cover. If ``rotate`` is ``true``, it will also rotate the region to ensure text is displayed left-to-right.
+
+If the media data doesn't have any box art, or the game data :ref:`box_texture_regions <api_RetroHubGameData_box_texture_regions>` doesn't contain the specified ``region``, this function returns ``null``.
+
+.. code-block:: gdscript
+
+
+	# Get the front cover of the box texture.
+	get_box_texture_region(game_data, media_data, RetroHubGameData.BoxTextureRegions.FRONT)
+
+	# Get the spine portion of the box texture, without rotating it (since they're usually vertical).
+	get_box_texture_region(game_data, media_data, RetroHubGameData.BoxTextureRegions.SPINE, false)
+

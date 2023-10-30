@@ -35,3 +35,6 @@ There are no special notes for this system. Games should work out of the box.
 Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
+- :ref:`emulator_fuse`
+- :ref:`emulator_eightyone`
+- :ref:`emulator_zesarux`

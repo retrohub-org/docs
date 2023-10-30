@@ -43,9 +43,15 @@ In-theme menu
 
 Themes have a special input action available: **rh_theme_menu** (|action: rh_theme_menu| by default). You can use this to implement a configuration UI from within your theme.
 
+.. warning::
+	You will have to manually save this configuration by calling :ref:`save_theme_config <api_RetroHubConfig_save_theme_config>`.
+
 In-app menu
 ^^^^^^^^^^^
 
 If you want to integrate the configuration UI better in the app, you can also specify a scene for RetroHub to load and add to the configuration menu. This will be displayed under the "Theme" section. To do this, set a Custom Configuration Scene in the theme helper addon's configuration.
 
 .. image:: assets/custom_config_scene.png
+
+.. note::
+	When using this approach, RetroHub will automatically save theme configuration when the theme is unloaded, so you don't need to do it manually.

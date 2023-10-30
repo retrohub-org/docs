@@ -34,16 +34,15 @@ Supported systems
 - :ref:`system_pc98`
 - :ref:`system_samcoupe`
 - :ref:`system_spectravideo`
+- :ref:`system_ti99`
 - :ref:`system_to8`
 - :ref:`system_vic20`
 - :ref:`system_x1`
 - :ref:`system_x68000`
 - :ref:`system_zx81`
 - :ref:`system_zxspectrum`
-- :ref:`system_cavestory`
 - :ref:`system_chailove`
 - :ref:`system_doom`
-- :ref:`system_godot`
 - :ref:`system_lutro`
 - :ref:`system_scummvm`
 - :ref:`system_tic80`

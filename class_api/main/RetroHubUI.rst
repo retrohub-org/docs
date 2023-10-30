@@ -90,6 +90,23 @@ Maximum size, in pixels, for |godot_popupmenu| elements. Use this value in your 
 Enumerations
 ------------
 
+.. _api_RetroHubUI_AudioKeys:
+
+enum **AudioKeys**:
+
+- **ACTIVATED** - Button activated.
+- **CHECK_BUTTON_OFF** - Check button toggled off.
+- **CHECK_BUTTON_ON** - Check button toggled on.
+- **KEYBOARD_TYPE** - Virtual keyboard inputs.
+- **MENU_ENTER** - Menu opened.
+- **MENU_IN** - Popup opened.
+- **MENU_OUT** - Popup/menu closed.
+- **NAVIGATION** - UI navigation.
+- **SLIDE** - Sliding tabs.
+- **SLIDER_TICK** - Value change ticks.
+
+----
+
 .. _api_RetroHubUI_Icons:
 
 enum **Icons**:
@@ -160,6 +177,12 @@ Methods
 	  - :ref:`open_app_config <api_RetroHubUI_open_app_config>`
 	* - void
 	  - :ref:`show_warning <api_RetroHubUI_show_warning>`
+	* - |godot_window|
+	  - :ref:`get_focused_window <api_RetroHubUI_get_focused_window>`
+	* - |godot_control|
+	  - :ref:`get_true_focused_control <api_RetroHubUI_get_true_focused_control>`
+	* - void
+	  - :ref:`play_sound <api_RetroHubUI_play_sound>`
 
 ----
 
@@ -286,3 +309,27 @@ Opens RetroHub's app configuration UI. If ``-1`` is specified, the app will stay
 	void **show_warning** (text: |godot_string|)
 
 Shows a warning to the user. Use this for warnings that are at the application level, and not specific to your theme.
+
+----
+
+.. _api_RetroHubUI_get_focused_window:
+
+	|godot_window| **get_focused_window** ()
+
+Returns the currently focused |godot_window| across the entire application.
+
+----
+
+.. _api_RetroHubUI_get_true_focused_control:
+
+	|godot_control| **get_true_focused_control** ()
+
+Returns the currently focused |godot_control| by also taking into account the currently focused |godot_window|.
+
+----
+
+.. _api_RetroHubUI_play_sound:
+
+	void **play_sound** (key: :ref:`AudioKeys <api_RetroHubUI_AudioKeys>`, override: |godot_bool| = ``true``)
+
+Plays a UI sound from one of the existing sound keys. If ``override`` is ``true``, the sound will replace any current sound; otherwise, it may be played in parallel to other sounds.

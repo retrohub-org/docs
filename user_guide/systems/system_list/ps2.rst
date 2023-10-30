@@ -44,3 +44,4 @@ Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
 - :ref:`emulator_pcsx2`
+- :ref:`emulator_play`

@@ -81,6 +81,9 @@ The system short names available can be checked at :doc:`/user_guide/systems/ind
 
 Each system has a set of file extensions associated, so RetroHub doesn't pick irrelevant files, such as text files. These extensions can also be configured per system later on.
 
+.. note::
+	You can also choose to store downloaded game media on a separate directory. If you wish to do so, disable the ``Store media in the configuration directory?`` option and pick a folder for storing media.
+
 Systems
 -------
 

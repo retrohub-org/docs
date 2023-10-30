@@ -1,3 +1,5 @@
+.. include:: /global/godot_api.rst
+
 .. _theme_section_ui:
 
 User Interface
@@ -50,3 +52,12 @@ Virtual Keyboard
 RetroHub will show a virtual keyboard automatically if a ``LineEdit`` or ``TextEdit`` node is focused from a controller and/or mouse input. If you need to, you can also manually trigger the virtual keyboard to show up with ``RetroHubUI.show_virtual_keyboard()``.
 
 You need to have the required node be currently focused and accept raw key events for this to properly work. For more information check the :ref:`api_RetroHubUI` class reference.
+
+Interface Sounds
+----------------
+
+RetroHub ships with some interface sounds which can also be used by themes with very minor modifications. This system works by detecting focused |godot_control| nodes and playing appropriate sounds.
+
+To prevent this system from playing sounds automatically to a particular node, add it to the ``rh_no_sound`` group.
+
+To manually play sounds yourself, use the :ref:`play_sound <api_RetroHubUI_play_sound>` function.

@@ -26,3 +26,5 @@ There are no special notes for this system. Games should work out of the box.
 Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
+- :ref:`emulator_a7800`
+- :ref:`emulator_mame`

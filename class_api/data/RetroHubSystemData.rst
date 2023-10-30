@@ -16,11 +16,11 @@ Enumerations
 
 enum **Category**:
 
-- **Console = 0** - A retro console.
-- **Arcade = 1** - An arcade machine.
-- **Computer = 2** - A retro computer.
-- **GameEngine = 3** - A game engine.
-- **ModernConsole = 4** - A modern console (7th generation upwards).
+- **Console** - A retro console.
+- **Arcade** - An arcade machine.
+- **Computer** - A retro computer.
+- **GameEngine** - A game engine.
+- **ModernConsole** - A modern console (7th generation upwards).
 
 Properties
 ----------

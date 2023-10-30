@@ -33,3 +33,4 @@ There are no special notes for this system. Games should work out of the box.
 
 Emulators
 ~~~~~~~~~
+- :ref:`emulator_frotz`

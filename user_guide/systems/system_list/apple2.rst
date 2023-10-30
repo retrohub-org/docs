@@ -27,3 +27,4 @@ Emulators
 ~~~~~~~~~
 - :ref:`emulator_retroarch`
 - :ref:`emulator_mednafen`
+- :ref:`emulator_mame`

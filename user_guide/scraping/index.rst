@@ -8,10 +8,6 @@ A scraper is a tool to automatically fill up game's metadata and media. RetroHub
 
 - `ScreenScraper <https://www.screenscraper.fr/>`_
 
-Planned support for future scraper services:
-
-- `IGDB <https://www.igdb.com/>`_
-
 Usage
 -----
 

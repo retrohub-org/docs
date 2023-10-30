@@ -73,6 +73,8 @@ Constants
 	  - :ref:`KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE <api_ConfigData_KEY_VIRTUAL_KEYBOARD_SHOW_ON_MOUSE>`
 	* - |godot_bool|
 	  - :ref:`KEY_ACCESSIBILITY_SCREEN_READER_ENABLED <api_ConfigData_KEY_ACCESSIBILITY_SCREEN_READER_ENABLED>`
+	* - |godot_string|
+	  - :ref:`KEY_CUSTOM_GAMEMEDIA_DIR <api_ConfigData_KEY_CUSTOM_GAMEMEDIA_DIR>`
 
 ----
 
@@ -298,6 +300,14 @@ Key for the :ref:`virtual_keyboard_show_on_mouse <api_ConfigData_virtual_keyboar
 
 Key for the :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibility_screen_reader_enabled>` property.
 
+----
+
+.. _api_ConfigData_KEY_CUSTOM_GAMEMEDIA_DIR:
+
+	|godot_string| **KEY_CUSTOM_GAMEMEDIA_DIR** = ``"custom_gamemedia_dir"``
+
+Key for the :ref:`custom_gamemedia_dir <api_ConfigData_custom_gamemedia_dir>` property.
+
 Properties
 ----------
 
@@ -392,6 +402,9 @@ Properties
 	* - |godot_bool|
 	  - :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibility_screen_reader_enabled>`
 	  - ``false``
+	* - |godot_string|
+	  - :ref:`custom_gamemedia_dir <api_ConfigData_custom_gamemedia_dir>`
+	  - ``""``
 
 ----
 
@@ -669,3 +682,11 @@ If ``true``, shows the virtual keyboard when a mouse click or touch event is don
 	|godot_bool| **accessibility_screen_reader_enabled** = ``false``
 
 If ``true``, enables screen reader support.
+
+----
+
+.. _api_ConfigData_custom_gamemedia_dir:
+
+	|godot_string| **custom_gamemedia_dir** = ``""``
+
+If specificed, stores downloaded media files separately from the main configuration directory, on a user specified path.

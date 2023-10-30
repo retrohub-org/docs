@@ -35,3 +35,5 @@ Emulators
 - :ref:`emulator_retroarch`
 - :ref:`emulator_mupen64plus`
 - :ref:`emulator_ares`
+- :ref:`emulator_rmg`
+- :ref:`emulator_project64`

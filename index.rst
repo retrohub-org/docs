@@ -11,4 +11,5 @@ You can navigate the whole documentation through the side bar on the left, as we
 
 	user_guide/index
 	theme_development/index
+	app_development/index
 	class_api/index
