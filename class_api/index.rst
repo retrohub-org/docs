@@ -32,3 +32,14 @@ Utils
 	utils/FileUtils
 	utils/JSONUtils
 	utils/TTS
+
+Integrations
+------------
+.. toctree::
+	:maxdepth: 1
+
+	integrations/RetroAchievements
+	integrations/subclasses/GameInfo
+	integrations/subclasses/Achievement
+	integrations/subclasses/Raw
+	integrations/subclasses/Raw_Response
