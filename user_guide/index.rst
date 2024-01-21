@@ -13,3 +13,4 @@ This section shows how to setup and configure RetroHub.
 	input/index
 	systems/index
 	emulators/index
+	integrations/index

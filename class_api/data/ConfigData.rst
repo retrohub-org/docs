@@ -41,11 +41,11 @@ Constants
 	  - :ref:`KEY_DATE_FORMAT <api_ConfigData_KEY_DATE_FORMAT>`
 	* - |godot_string|
 	  - :ref:`KEY_SYSTEM_NAMES <api_ConfigData_KEY_SYSTEM_NAMES>`
-	* - |godot_int|
+	* - |godot_string|
 	  - :ref:`KEY_SCRAPER_HASH_FILE_SIZE <api_ConfigData_KEY_SCRAPER_HASH_FILE_SIZE>`
 	* - |godot_string|
 	  - :ref:`KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT <api_ConfigData_KEY_SCRAPER_SS_USE_CUSTOM_ACCOUNT>`
-	* - |godot_int|
+	* - |godot_string|
 	  - :ref:`KEY_SCRAPER_SS_MAX_THREADS <api_ConfigData_KEY_SCRAPER_SS_MAX_THREADS>`
 	* - |godot_string|
 	  - :ref:`KEY_CUSTOM_INPUT_REMAP <api_ConfigData_KEY_CUSTOM_INPUT_REMAP>`
@@ -75,6 +75,10 @@ Constants
 	  - :ref:`KEY_ACCESSIBILITY_SCREEN_READER_ENABLED <api_ConfigData_KEY_ACCESSIBILITY_SCREEN_READER_ENABLED>`
 	* - |godot_string|
 	  - :ref:`KEY_CUSTOM_GAMEMEDIA_DIR <api_ConfigData_KEY_CUSTOM_GAMEMEDIA_DIR>`
+	* - |godot_string|
+	  - :ref:`KEY_UI_VOLUME <api_ConfigData_KEY_UI_VOLUME>`
+	* - |godot_string|
+	  - :ref:`KEY_INTEGRATION_RCHEEVOS_ENABLED <api_ConfigData_KEY_INTEGRATION_RCHEEVOS_ENABLED>`
 
 ----
 
@@ -308,6 +312,22 @@ Key for the :ref:`accessibility_screen_reader_enabled <api_ConfigData_accessibil
 
 Key for the :ref:`custom_gamemedia_dir <api_ConfigData_custom_gamemedia_dir>` property.
 
+----
+
+.. _api_ConfigData_KEY_UI_VOLUME:
+
+	|godot_string| **KEY_UI_VOLUME** = ``"ui_volume"``
+
+Key for the :ref:`ui_volume <api_ConfigData_ui_volume>` property.
+
+----
+
+.. _api_ConfigData_KEY_INTEGRATION_RCHEEVOS_ENABLED:
+
+	|godot_string| **KEY_INTEGRATION_RCHEEVOS_ENABLED** = ``"integration_rcheevos_enabled"``
+
+Key for the :ref:`integration_rcheevos_enabled <api_ConfigData_integration_rcheevos_enabled>` property.
+
 Properties
 ----------
 
@@ -405,6 +425,12 @@ Properties
 	* - |godot_string|
 	  - :ref:`custom_gamemedia_dir <api_ConfigData_custom_gamemedia_dir>`
 	  - ``""``
+	* - |godot_int|
+	  - :ref:`ui_volume <api_ConfigData_ui_volume>`
+	  - ``100``
+	* - |godot_bool|
+	  - :ref:`integration_rcheevos_enabled <api_ConfigData_integration_rcheevos_enabled>`
+	  - ``false``
 
 ----
 
@@ -690,3 +716,19 @@ If ``true``, enables screen reader support.
 	|godot_string| **custom_gamemedia_dir** = ``""``
 
 If specificed, stores downloaded media files separately from the main configuration directory, on a user specified path.
+
+----
+
+.. _api_ConfigData_ui_volume:
+
+	|godot_int| **ui_volume** = ``100``
+
+UI volume, in percentage. Can range from ``0`` to ``100``.
+
+----
+
+.. _api_ConfigData_integration_rcheevos_enabled:
+
+	|godot_bool| **integration_rcheevos_enabled** = ``false``
+
+If ``true``, enables RetroHub's integration with the `RetroAchievements <https://retroachievements.org/>`__ service.
