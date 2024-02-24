@@ -21,7 +21,7 @@ Setup
 
 	You also need to `setup your emulators properly <https://retroachievements.org/download.php>`__, and ensure your game files are supported by RetroAchievements.
 
-Open the Configuration UI (|action: rh_menu|), and navigate to the **Integrations** section. Find the ``RetroAchievements`` section.
+Open the **Settings** (|action: rh_menu|) panel, and navigate to the **Integrations** section. Find the ``RetroAchievements`` section.
 
 .. image:: assets/integration.png
 

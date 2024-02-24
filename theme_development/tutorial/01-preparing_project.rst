@@ -5,7 +5,7 @@ Before starting, you need to setup the necessary tools, and prepare the project 
 
 What you'll need
 ----------------
-Firstly, you'll need to get the official `Godot Editor v4.1 <https://godotengine.org/download>`_. Although RetroHub uses a custom version of Godot, the themes can be developed on the official version.
+Firstly, you'll need to get the official `Godot Editor v4.2.1-stable <https://godotengine.org/download>`_. Although RetroHub uses a custom version of Godot, the themes can be developed on the official version.
 
 Next, you need a project pre-configured with RetroHub's settings, such as input keys, addons, etc... For that, we created a bootstrap project, which is a base that can be used for developing any theme. Download `retrohub_bootstrap_theme <https://github.com/retrohub-org/retrohub-bootstrap-theme>`_ and open it in Godot.
 

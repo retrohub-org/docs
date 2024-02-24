@@ -100,9 +100,9 @@ Emulators
 
 .. image:: assets/02-emulators-settings.png
 
-This section is here to give you an overview of your games expected to work right away. RetroHub is essentially an emulator frontend, so it does not come with any pre-installed. You'll need to download, install and configure all the emulators previously before RetroHub can use them.
+This section gives you an overview of what emulatores were detected and are thus expected to work right away. RetroHub is an emulator frontend, so it does not come with any pre-installed ones. You'll need to download, install and configure all your desired emulators previously before RetroHub can use them.
 
-If RetroHub fails in finding an emulator, it shows the paths it tried to check on your system for it's existence. If your emulator is working as intended, you may need to set it's path manually later on.
+If RetroHub fails in finding an emulator, it shows the paths it tried to check on your system for its existence. If your emulator is working as intended, you may need to set its path manually later on.
 
 All done
 --------

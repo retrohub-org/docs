@@ -30,7 +30,7 @@ To install themes, move the theme file (``.pck`` extension) inside the ``themes`
 
 You can also open the theme folder from the app's settings.
 
-After that, pick your theme in the **General** settings. Themes above the separator are bundle by default, while the ones below it are downloaded.
+After that, pick your theme in the **General** settings. Themes above the separator are bundled by default, while the ones below it were manually downloaded.
 
 .. image:: assets/03-themes.png
 

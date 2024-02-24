@@ -8,6 +8,12 @@ RetroHub is available for **Windows**, **macOS** and **Linux**.
 Installing
 ~~~~~~~~~~
 
+.. warning::
+	When downloading automatic builds from GitHub's CI, you may need to mark the app as executable. This is specially relevant for macOS, as not doing so will throw a generic ``This app can't be opened`` error. To do so, open a terminal and run:
+
+	* macOS: ``chmod +x RetroHub.App/Contents/MacOS/RetroHub``
+	* Linux: ``chmod +x RetroHub``
+
 Windows
 -------
 
@@ -25,10 +31,3 @@ Linux
 -----
 
 Linux releases work like portable applications. Extract to a folder of your choice and run the main ``RetroHub`` executable.
-
-
-.. warning::
-	When downloading automatic builds from GitHub's CI, you need to mark the app as executable. This is specially relevant for macOS, as not doing so will throw a generic ``This app can't be opened`` error. To do so, open a terminal and run:
-
-	* macOS: ``chmod +x RetroHub.App/Contents/MacOS/RetroHub``
-	* Linux: ``chmod +x RetroHub``
