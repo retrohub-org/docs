@@ -37,22 +37,22 @@ For that reason, RetroHub stores configuration files and metadata information in
 Adding metadata
 ---------------
 
-When RetroHub finds a valid game file, it starts without any metadata. It's name will be set to the file name. You can then populate a lot of information for the game, such as the name, description, release date, developer, publisher, genre, etc.
+When RetroHub finds a valid game file, it starts without any metadata. Only the name will be set to the file name. You can then populate a lot of information for the game, such as the name, description, release date, developer, publisher, genre, etc.
 
-To do this, select a given game, then open the **Settings** (|action: rh_menu|). The **Game** tab should be selected by default; if not, select it.
+To do this, select a given game, then open the **Settings** (|action: rh_menu|) panel. The **Game** tab should be selected by default; if not, select the **Game** tab from the left.
 
 .. image:: assets/game_settings.png
 
-Here you can add or edit your game's metadata. Don't forget to save changes when you're done.
+Here you can edit your game's metadata. Don't forget to save changes when you're done.
 
 Adding media
 ------------
 
-Game entries can also have media to show. This can be a screenshot, a logo, a short gameplay video, a box texture, etc...
+Game entries may also have media to show. This can be a screenshot, a logo, a short gameplay video, a box texture, etc...
 
 .. image:: assets/game_media.png
 
-Due to the nature of media files, this has done outside of RetroHub. Let's imagine you have the game ``My Game [!].rom``, in the ``snes`` folder. To add media to it:
+Due to the nature of media files, this has to be done outside of RetroHub. Suppose you have the game ``My Game [!].rom``, in the ``snes`` folder. To add media to it, you'll need to:
 
 - Go to RetroHub's configuration directory (check above for the location)
 - Go to the ``gamemedia`` folder
@@ -90,4 +90,4 @@ The available media files are the following:
 Filling game information automatically
 --------------------------------------
 
-Setting up metadata and media for your entire library is very time consuming. To avoid this, RetroHub can use scraper services that automatically fill most, it not all of this information for you. Check the :ref:`userguide_scraping` page for more information on how to use them.
+Setting up metadata and media for your entire library is very time consuming. To accelerate this process, RetroHub can use scraper services that automatically fill most, it not all, information for you. Check the :ref:`userguide_scraping` page for more information on how to use them.

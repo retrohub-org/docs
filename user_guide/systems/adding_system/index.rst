@@ -11,7 +11,7 @@ There are two ways to achieve this:
 Application
 -----------
 
-Open the Configuration UI (|action: rh_menu|), and navigate to the **Systems** section. Click on the ``Add custom system``.
+Open the **Settings** (|action: rh_menu|) panel, and navigate to the **Systems** section. Click on the ``Add custom system``.
 
 .. image:: assets/system_section.png
 

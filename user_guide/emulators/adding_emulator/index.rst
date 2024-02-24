@@ -8,7 +8,7 @@ There are two ways to achieve this:
 Application
 -----------
 
-Open the Configuration UI (|action: rh_menu|), and navigate to the **Emulators** section. Click on the ``Add custom emulator``.
+Open the **Settings** (|action: rh_menu|) panel, and navigate to the **Emulators** section. Click on the ``Add custom emulator``.
 
 .. image:: assets/emulator_section.png
 

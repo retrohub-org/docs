@@ -4,7 +4,7 @@
 Scraping
 ========
 
-A scraper is a tool to automatically fill up game's metadata and media. RetroHub supports the following scrapers:
+A scraper is a tool that can automatically fetch a game's metadata and download associated media. RetroHub supports the following scrapers:
 
 - `ScreenScraper <https://www.screenscraper.fr/>`_
 
@@ -12,13 +12,16 @@ Usage
 -----
 
 .. note::
-	It's recommended to use keyboard and mouse during the process.
+	It's recommended to use keyboard and mouse during the scraping process, as you might need plenty of text input and navigating through lists.
 
 You can scrape one, multiple, or even your entire library of games. Open the **Settings** (|action: rh_menu|) menu and select the **Scraper** tab.
 
 .. image:: assets/scraper_settings.png
 
-Select the desired scraping service. Check `Search Support`_, `Metadata Support`_ and `Media Support`_ for a list of supported search modes, metadata and media for each scraper. We recommend using ScreenScraper as it's the most complete scraper.
+Select the desired scraping service. Different scrapers will have different levels of `Search Support`_, `Metadata Support`_ and `Media Support`_.
+
+.. note::
+	We recommend using ScreenScraper as it is the most complete scraper right now.
 
 .. image:: assets/scraper_settings_search.png
 
@@ -46,7 +49,7 @@ Depending on the amount of games, types of media, and your internet connection, 
 .. image:: assets/scraper_process.png
 
 .. warning::
-	For large game libraries, the media files can start to take up a lot of space (>1Gb). Ensure you have enough free space on your hard drive before scraping, as this may fill your entire disk space.
+	For large game libraries, the media files can start to take up a lot of space (>1GB). Ensure you have enough free space on your hard drive before scraping, as this may fill your entire disk space.
 
 ScreenScraper
 -------------
@@ -59,7 +62,7 @@ API quota
 ^^^^^^^^^
 ScreenScraper has both a daily and hourly quota for API requests. If this limit is reached, RetroHub will start showing errors when scraping.
 
-To circumvent this, you should make a free account on theit website at `https://www.screenscraper.fr/ <https://www.screenscraper.fr/>`_ and enter your credentials in the **Scraper** settings:
+To circumvent this, you should make a free account on their website at `https://www.screenscraper.fr/ <https://www.screenscraper.fr/>`_ and enter your credentials in the **Scraper** settings:
 
 .. image:: assets/scraper_ss_account.png
 

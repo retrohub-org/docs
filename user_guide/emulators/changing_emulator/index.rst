@@ -8,7 +8,7 @@ There are two ways to achieve this:
 Application
 -----------
 
-Open the Configuration UI (|action: rh_menu|), and navigate to the **Emulators** section.
+Open the **Settings** (|action: rh_menu|) panel, and navigate to the **Emulators** section.
 
 .. image:: ../adding_emulator/assets/emulator_section.png
 
